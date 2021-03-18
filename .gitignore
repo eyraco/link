@@ -48,3 +48,4 @@ logfile
 .env
 .DS_Store
 /mix_home/
+/mix_build/
