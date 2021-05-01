@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.23.0">
+    <meta name="project" content="core v0.1.0">
+
+    <title>CoreWeb.Cldr.Date — core v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-9f91ebe876dc01d67920.css" />
+
+    <script src="dist/sidebar_items-dfeb18d2d0.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-60a0c9f10e9e52eae31f.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+core
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+      <a href="readme.html">
+        <img src="assets/logo.svg" alt="core" class="sidebar-projectImage">
+      </a>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+CoreWeb.Cldr.Date <small class="app-vsn">(core v0.1.0)</small>
+
+          <a href="https://github.com/eyra/eylixir/blob/master/lib/core_web/cldr.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_string/2">to_string(date, options \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Formats a date according to a format string
+as defined in CLDR and described in <a href="http://unicode.org/reports/tr35/tr35-dates.html">TR35</a></p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_string!/2">to_string!(date, options \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Formats a date according to a format string
+as defined in CLDR and described in <a href="http://unicode.org/reports/tr35/tr35-dates.html">TR35</a></p></div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="to_string/2">
+
+    <span id="to_string/1"></span>
+
+  <div class="detail-header">
+    <a href="#to_string/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">to_string(date, options \\ [])</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core_web/cldr.ex#L1" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>to_string(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()} | {:error, {<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}}</pre>
+
+      </div>
+
+<p>Formats a date according to a format string
+as defined in CLDR and described in <a href="http://unicode.org/reports/tr35/tr35-dates.html">TR35</a></p><h2 id="to_string/2-arguments" class="section-heading">
+  <a href="#to_string/2-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Arguments
+</h2>
+<ul><li><p><code class="inline">date</code> is a <code class="inline">%Date{}</code> struct or any map that contains the keys
+<code class="inline">year</code>, <code class="inline">month</code>, <code class="inline">day</code> and <code class="inline">calendar</code></p></li><li><p><code class="inline">options</code> is a keyword list of options for formatting.  The valid options are:</p></li></ul><h2 id="to_string/2-options" class="section-heading">
+  <a href="#to_string/2-options" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Options
+</h2>
+<ul><li><p><code class="inline">format:</code> <code class="inline">:short</code> | <code class="inline">:medium</code> | <code class="inline">:long</code> | <code class="inline">:full</code> or a format string.
+The default is <code class="inline">:medium</code></p></li><li><p><code class="inline">locale:</code> any locale returned by <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_locale_names/1"><code class="inline">Cldr.known_locale_names/1</code></a>.
+The default is <code class="inline">Cldr.get_locale()</code>.</p></li><li><p><code class="inline">number_system:</code> a number system into which the formatted date digits
+should be transliterated</p></li></ul><h2 id="to_string/2-returns" class="section-heading">
+  <a href="#to_string/2-returns" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Returns
+</h2>
+<ul><li><p><code class="inline">{:ok, formatted_string}</code> or</p></li><li><p><code class="inline">{:error, reason}</code></p></li></ul><h2 id="to_string/2-examples" class="section-heading">
+  <a href="#to_string/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:medium</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="p" data-group-id="3759169643-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jul 10, 2017&quot;</span><span class="p" data-group-id="3759169643-1">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="p" data-group-id="3759169643-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jul 10, 2017&quot;</span><span class="p" data-group-id="3759169643-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:full</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="p" data-group-id="3759169643-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Monday, July 10, 2017&quot;</span><span class="p" data-group-id="3759169643-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:short</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="p" data-group-id="3759169643-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;7/10/17&quot;</span><span class="p" data-group-id="3759169643-4">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:short</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="w">
+</span><span class="p" data-group-id="3759169643-5">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10/07/2017&quot;</span><span class="p" data-group-id="3759169643-5">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;af&quot;</span><span class="w">
+</span><span class="p" data-group-id="3759169643-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10 Julie 2017&quot;</span><span class="p" data-group-id="3759169643-6">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="to_string!/2">
+
+    <span id="to_string!/1"></span>
+
+  <div class="detail-header">
+    <a href="#to_string!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">to_string!(date, options \\ [])</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core_web/cldr.ex#L1" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>to_string!(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+
+      </div>
+
+<p>Formats a date according to a format string
+as defined in CLDR and described in <a href="http://unicode.org/reports/tr35/tr35-dates.html">TR35</a></p><h2 id="to_string!/2-arguments" class="section-heading">
+  <a href="#to_string!/2-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Arguments
+</h2>
+<ul><li><p><code class="inline">date</code> is a <code class="inline">%Date{}</code> struct or any map that contains the keys
+<code class="inline">year</code>, <code class="inline">month</code>, <code class="inline">day</code> and <code class="inline">calendar</code></p></li><li><p><code class="inline">options</code> is a keyword list of options for formatting.</p></li></ul><h2 id="to_string!/2-options" class="section-heading">
+  <a href="#to_string!/2-options" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Options
+</h2>
+<ul><li><p><code class="inline">format:</code> <code class="inline">:short</code> | <code class="inline">:medium</code> | <code class="inline">:long</code> | <code class="inline">:full</code> or a format string.
+The default is <code class="inline">:medium</code></p></li><li><p><code class="inline">locale</code> is any valid locale name returned by <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_locale_names/0"><code class="inline">Cldr.known_locale_names/0</code></a>
+or a <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html"><code class="inline">Cldr.LanguageTag</code></a> struct.  The default is <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#get_locale/0"><code class="inline">Cldr.get_locale/0</code></a></p></li><li><p><code class="inline">number_system:</code> a number system into which the formatted date digits should
+be transliterated</p></li></ul><h2 id="to_string!/2-returns" class="section-heading">
+  <a href="#to_string!/2-returns" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Returns
+</h2>
+<ul><li><p><code class="inline">formatted_date</code> or</p></li><li><p>raises an exception.</p></li></ul><h2 id="to_string!/2-examples" class="section-heading">
+  <a href="#to_string!/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:medium</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="s">&quot;Jul 10, 2017&quot;</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="s">&quot;Jul 10, 2017&quot;</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:full</span><span class="p">,</span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="s">&quot;Monday, July 10, 2017&quot;</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:short</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="s">&quot;7/10/17&quot;</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:short</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="w">
+</span><span class="s">&quot;10/07/2017&quot;</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Date</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="ld">~D[2017-07-10]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;af&quot;</span><span class="w">
+</span><span class="s">&quot;10 Julie 2017&quot;</span></code></pre>
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.23.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

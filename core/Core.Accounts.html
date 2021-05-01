@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.23.0">
+    <meta name="project" content="core v0.1.0">
+
+    <title>Core.Accounts — core v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-9f91ebe876dc01d67920.css" />
+
+    <script src="dist/sidebar_items-dfeb18d2d0.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-60a0c9f10e9e52eae31f.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+core
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+      <a href="readme.html">
+        <img src="assets/logo.svg" alt="core" class="sidebar-projectImage">
+      </a>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+Core.Accounts <small class="app-vsn">(core v0.1.0)</small>
+
+          <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+        <section id="moduledoc">
+<p>The Accounts context.</p>
+        </section>
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#apply_user_email/3">apply_user_email(user, password, attrs)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Emulates that the email will change without actually changing
+it in the database.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_profile/2">change_profile(profile, attrs \\ %{})</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_user_email/2">change_user_email(user, attrs \\ %{})</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for changing the user email.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_user_password/2">change_user_password(user, attrs \\ %{})</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for changing the user password.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_user_registration/2">change_user_registration(user, attrs \\ %{})</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user changes.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#confirm_user/1">confirm_user(token)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Confirms a user by the given token.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_session_token/1">delete_session_token(token)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Deletes the signed token with the given context.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#deliver_already_activated_notification/2">deliver_already_activated_notification(user, login_url)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#deliver_update_email_instructions/3">deliver_update_email_instructions(user, current_email, update_email_url_fun)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Delivers the update email instructions to the given user.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#deliver_user_confirmation_instructions/2">deliver_user_confirmation_instructions(user, confirmation_url_fun)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Delivers the confirmation email instructions to the given user.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#deliver_user_reset_password_instructions/2">deliver_user_reset_password_instructions(user, reset_password_url_fun)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Delivers the reset password email to the given user.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#generate_user_session_token/1">generate_user_session_token(user)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Generates a session token.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_display_label/1">get_display_label(user)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_profile/1">get_profile(user_id)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user!/1">get_user!(id)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets a single user.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_by_email/1">get_user_by_email(email)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets a user by email.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_by_email_and_password/2">get_user_by_email_and_password(email, password)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets a user by email and password.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_by_reset_password_token/1">get_user_by_reset_password_token(token)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets the user by reset password token.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_by_session_token/1">get_user_by_session_token(token)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets the user with the given signed token.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#register_user/1">register_user(attrs)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Registers a user.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#reset_user_password/2">reset_user_password(user, attrs)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Resets the user password.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_profile/1">update_profile(changeset)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_profile/2">update_profile(profile, attrs)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_user_email/2">update_user_email(user, token)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Updates the user email using the given token.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_user_password/3">update_user_password(user, password, attrs)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Updates the user password.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_user_profile/3">update_user_profile(user, user_attrs, profile_attrs)</a>
+
+  </div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="apply_user_email/3">
+
+  <div class="detail-header">
+    <a href="#apply_user_email/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">apply_user_email(user, password, attrs)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L126" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Emulates that the email will change without actually changing
+it in the database.</p><h2 id="apply_user_email/3-examples" class="section-heading">
+  <a href="#apply_user_email/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">apply_user_email</span><span class="p" data-group-id="3178832307-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;valid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3178832307-2">%{</span><span class="ss">email</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="3178832307-2">}</span><span class="p" data-group-id="3178832307-1">)</span><span class="w">
+</span><span class="p" data-group-id="3178832307-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3178832307-4">%</span><span class="nc" data-group-id="3178832307-4">User</span><span class="p" data-group-id="3178832307-4">{</span><span class="p" data-group-id="3178832307-4">}</span><span class="p" data-group-id="3178832307-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">apply_user_email</span><span class="p" data-group-id="3178832307-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3178832307-6">%{</span><span class="ss">email</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="3178832307-6">}</span><span class="p" data-group-id="3178832307-5">)</span><span class="w">
+</span><span class="p" data-group-id="3178832307-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3178832307-8">%</span><span class="nc" data-group-id="3178832307-8">Ecto.Changeset</span><span class="p" data-group-id="3178832307-8">{</span><span class="p" data-group-id="3178832307-8">}</span><span class="p" data-group-id="3178832307-7">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="change_profile/2">
+
+    <span id="change_profile/1"></span>
+
+  <div class="detail-header">
+    <a href="#change_profile/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">change_profile(profile, attrs \\ %{})</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L401" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="change_user_email/2">
+
+    <span id="change_user_email/1"></span>
+
+  <div class="detail-header">
+    <a href="#change_user_email/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">change_user_email(user, attrs \\ %{})</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L109" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for changing the user email.</p><h2 id="change_user_email/2-examples" class="section-heading">
+  <a href="#change_user_email/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_email</span><span class="p" data-group-id="7334526676-1">(</span><span class="n">user</span><span class="p" data-group-id="7334526676-1">)</span><span class="w">
+</span><span class="p" data-group-id="7334526676-2">%</span><span class="nc" data-group-id="7334526676-2">Ecto.Changeset</span><span class="p" data-group-id="7334526676-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7334526676-3">%</span><span class="nc" data-group-id="7334526676-3">User</span><span class="p" data-group-id="7334526676-3">{</span><span class="p" data-group-id="7334526676-3">}</span><span class="p" data-group-id="7334526676-2">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="change_user_password/2">
+
+    <span id="change_user_password/1"></span>
+
+  <div class="detail-header">
+    <a href="#change_user_password/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">change_user_password(user, attrs \\ %{})</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L185" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for changing the user password.</p><h2 id="change_user_password/2-examples" class="section-heading">
+  <a href="#change_user_password/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_password</span><span class="p" data-group-id="5027352949-1">(</span><span class="n">user</span><span class="p" data-group-id="5027352949-1">)</span><span class="w">
+</span><span class="p" data-group-id="5027352949-2">%</span><span class="nc" data-group-id="5027352949-2">Ecto.Changeset</span><span class="p" data-group-id="5027352949-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5027352949-3">%</span><span class="nc" data-group-id="5027352949-3">User</span><span class="p" data-group-id="5027352949-3">{</span><span class="p" data-group-id="5027352949-3">}</span><span class="p" data-group-id="5027352949-2">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="change_user_registration/2">
+
+    <span id="change_user_registration/1"></span>
+
+  <div class="detail-header">
+    <a href="#change_user_registration/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">change_user_registration(user, attrs \\ %{})</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L94" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user changes.</p><h2 id="change_user_registration/2-examples" class="section-heading">
+  <a href="#change_user_registration/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_registration</span><span class="p" data-group-id="6949922943-1">(</span><span class="n">user</span><span class="p" data-group-id="6949922943-1">)</span><span class="w">
+</span><span class="p" data-group-id="6949922943-2">%</span><span class="nc" data-group-id="6949922943-2">Ecto.Changeset</span><span class="p" data-group-id="6949922943-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6949922943-3">%</span><span class="nc" data-group-id="6949922943-3">User</span><span class="p" data-group-id="6949922943-3">{</span><span class="p" data-group-id="6949922943-3">}</span><span class="p" data-group-id="6949922943-2">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="confirm_user/1">
+
+  <div class="detail-header">
+    <a href="#confirm_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">confirm_user(token)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L279" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Confirms a user by the given token.</p><p>If the token matches, the user account is marked as confirmed
+and the token is deleted.</p>
+  </section>
+</section>
+<section class="detail" id="delete_session_token/1">
+
+  <div class="detail-header">
+    <a href="#delete_session_token/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_session_token(token)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L239" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Deletes the signed token with the given context.</p>
+  </section>
+</section>
+<section class="detail" id="deliver_already_activated_notification/2">
+
+  <div class="detail-header">
+    <a href="#deliver_already_activated_notification/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">deliver_already_activated_notification(user, login_url)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L269" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="deliver_update_email_instructions/3">
+
+  <div class="detail-header">
+    <a href="#deliver_update_email_instructions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">deliver_update_email_instructions(user, current_email, update_email_url_fun)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L168" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Delivers the update email instructions to the given user.</p><h2 id="deliver_update_email_instructions/3-examples" class="section-heading">
+  <a href="#deliver_update_email_instructions/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_update_email_instructions</span><span class="p" data-group-id="0014308876-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">current_email</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_update_email_url</span><span class="p" data-group-id="0014308876-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:edit</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="0014308876-2">)</span><span class="p" data-group-id="0014308876-1">)</span><span class="w">
+</span><span class="p" data-group-id="0014308876-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0014308876-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="0014308876-4">}</span><span class="p" data-group-id="0014308876-3">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="deliver_user_confirmation_instructions/2">
+
+  <div class="detail-header">
+    <a href="#deliver_user_confirmation_instructions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">deliver_user_confirmation_instructions(user, confirmation_url_fun)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L258" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Delivers the confirmation email instructions to the given user.</p><h2 id="deliver_user_confirmation_instructions/2-examples" class="section-heading">
+  <a href="#deliver_user_confirmation_instructions/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_confirmation_instructions</span><span class="p" data-group-id="1452614881-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_confirmation_url</span><span class="p" data-group-id="1452614881-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:confirm</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="1452614881-2">)</span><span class="p" data-group-id="1452614881-1">)</span><span class="w">
+</span><span class="p" data-group-id="1452614881-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1452614881-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="1452614881-4">}</span><span class="p" data-group-id="1452614881-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_confirmation_instructions</span><span class="p" data-group-id="1452614881-5">(</span><span class="n">confirmed_user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_confirmation_url</span><span class="p" data-group-id="1452614881-6">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:confirm</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="1452614881-6">)</span><span class="p" data-group-id="1452614881-5">)</span><span class="w">
+</span><span class="p" data-group-id="1452614881-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="ss">:already_confirmed</span><span class="p" data-group-id="1452614881-7">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="deliver_user_reset_password_instructions/2">
+
+  <div class="detail-header">
+    <a href="#deliver_user_reset_password_instructions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">deliver_user_reset_password_instructions(user, reset_password_url_fun)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L306" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Delivers the reset password email to the given user.</p><h2 id="deliver_user_reset_password_instructions/2-examples" class="section-heading">
+  <a href="#deliver_user_reset_password_instructions/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_reset_password_instructions</span><span class="p" data-group-id="1438323333-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_reset_password_url</span><span class="p" data-group-id="1438323333-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:edit</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="1438323333-2">)</span><span class="p" data-group-id="1438323333-1">)</span><span class="w">
+</span><span class="p" data-group-id="1438323333-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1438323333-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="1438323333-4">}</span><span class="p" data-group-id="1438323333-3">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="generate_user_session_token/1">
+
+  <div class="detail-header">
+    <a href="#generate_user_session_token/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">generate_user_session_token(user)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L222" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Generates a session token.</p>
+  </section>
+</section>
+<section class="detail" id="get_display_label/1">
+
+  <div class="detail-header">
+    <a href="#get_display_label/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_display_label(user)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L367" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="get_profile/1">
+
+  <div class="detail-header">
+    <a href="#get_profile/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_profile(user_id)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L357" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="get_user!/1">
+
+  <div class="detail-header">
+    <a href="#get_user!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_user!(id)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L63" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Gets a single user.</p><p>Raises <a href="https://hexdocs.pm/ecto/3.5.8/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the User does not exist.</p><h2 id="get_user!/1-examples" class="section-heading">
+  <a href="#get_user!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="3371461746-1">(</span><span class="mi">123</span><span class="p" data-group-id="3371461746-1">)</span><span class="w">
+</span><span class="p" data-group-id="3371461746-2">%</span><span class="nc" data-group-id="3371461746-2">User</span><span class="p" data-group-id="3371461746-2">{</span><span class="p" data-group-id="3371461746-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="3371461746-3">(</span><span class="mi">456</span><span class="p" data-group-id="3371461746-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="get_user_by_email/1">
+
+  <div class="detail-header">
+    <a href="#get_user_by_email/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_user_by_email(email)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L25" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Gets a user by email.</p><h2 id="get_user_by_email/1-examples" class="section-heading">
+  <a href="#get_user_by_email/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="5817356279-1">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p" data-group-id="5817356279-1">)</span><span class="w">
+</span><span class="p" data-group-id="5817356279-2">%</span><span class="nc" data-group-id="5817356279-2">User</span><span class="p" data-group-id="5817356279-2">{</span><span class="p" data-group-id="5817356279-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="5817356279-3">(</span><span class="s">&quot;unknown@example.com&quot;</span><span class="p" data-group-id="5817356279-3">)</span><span class="w">
+</span><span class="no">nil</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="get_user_by_email_and_password/2">
+
+  <div class="detail-header">
+    <a href="#get_user_by_email_and_password/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_user_by_email_and_password(email, password)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L41" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Gets a user by email and password.</p><h2 id="get_user_by_email_and_password/2-examples" class="section-heading">
+  <a href="#get_user_by_email_and_password/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email_and_password</span><span class="p" data-group-id="8969555210-1">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;correct_password&quot;</span><span class="p" data-group-id="8969555210-1">)</span><span class="w">
+</span><span class="p" data-group-id="8969555210-2">%</span><span class="nc" data-group-id="8969555210-2">User</span><span class="p" data-group-id="8969555210-2">{</span><span class="p" data-group-id="8969555210-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email_and_password</span><span class="p" data-group-id="8969555210-3">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid_password&quot;</span><span class="p" data-group-id="8969555210-3">)</span><span class="w">
+</span><span class="no">nil</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="get_user_by_reset_password_token/1">
+
+  <div class="detail-header">
+    <a href="#get_user_by_reset_password_token/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_user_by_reset_password_token(token)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L325" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Gets the user by reset password token.</p><h2 id="get_user_by_reset_password_token/1-examples" class="section-heading">
+  <a href="#get_user_by_reset_password_token/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_reset_password_token</span><span class="p" data-group-id="1686008444-1">(</span><span class="s">&quot;validtoken&quot;</span><span class="p" data-group-id="1686008444-1">)</span><span class="w">
+</span><span class="p" data-group-id="1686008444-2">%</span><span class="nc" data-group-id="1686008444-2">User</span><span class="p" data-group-id="1686008444-2">{</span><span class="p" data-group-id="1686008444-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_reset_password_token</span><span class="p" data-group-id="1686008444-3">(</span><span class="s">&quot;invalidtoken&quot;</span><span class="p" data-group-id="1686008444-3">)</span><span class="w">
+</span><span class="no">nil</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="get_user_by_session_token/1">
+
+  <div class="detail-header">
+    <a href="#get_user_by_session_token/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_user_by_session_token(token)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L231" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Gets the user with the given signed token.</p>
+  </section>
+</section>
+<section class="detail" id="register_user/1">
+
+  <div class="detail-header">
+    <a href="#register_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">register_user(attrs)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L79" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Registers a user.</p><h2 id="register_user/1-examples" class="section-heading">
+  <a href="#register_user/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="8098343756-1">(</span><span class="p" data-group-id="8098343756-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="8098343756-2">}</span><span class="p" data-group-id="8098343756-1">)</span><span class="w">
+</span><span class="p" data-group-id="8098343756-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8098343756-4">%</span><span class="nc" data-group-id="8098343756-4">User</span><span class="p" data-group-id="8098343756-4">{</span><span class="p" data-group-id="8098343756-4">}</span><span class="p" data-group-id="8098343756-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="8098343756-5">(</span><span class="p" data-group-id="8098343756-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="8098343756-6">}</span><span class="p" data-group-id="8098343756-5">)</span><span class="w">
+</span><span class="p" data-group-id="8098343756-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8098343756-8">%</span><span class="nc" data-group-id="8098343756-8">Ecto.Changeset</span><span class="p" data-group-id="8098343756-8">{</span><span class="p" data-group-id="8098343756-8">}</span><span class="p" data-group-id="8098343756-7">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="reset_user_password/2">
+
+  <div class="detail-header">
+    <a href="#reset_user_password/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">reset_user_password(user, attrs)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L346" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Resets the user password.</p><h2 id="reset_user_password/2-examples" class="section-heading">
+  <a href="#reset_user_password/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">reset_user_password</span><span class="p" data-group-id="9841980770-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9841980770-2">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;new long password&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password_confirmation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;new long password&quot;</span><span class="p" data-group-id="9841980770-2">}</span><span class="p" data-group-id="9841980770-1">)</span><span class="w">
+</span><span class="p" data-group-id="9841980770-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9841980770-4">%</span><span class="nc" data-group-id="9841980770-4">User</span><span class="p" data-group-id="9841980770-4">{</span><span class="p" data-group-id="9841980770-4">}</span><span class="p" data-group-id="9841980770-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">reset_user_password</span><span class="p" data-group-id="9841980770-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9841980770-6">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;valid&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password_confirmation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;not the same&quot;</span><span class="p" data-group-id="9841980770-6">}</span><span class="p" data-group-id="9841980770-5">)</span><span class="w">
+</span><span class="p" data-group-id="9841980770-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9841980770-8">%</span><span class="nc" data-group-id="9841980770-8">Ecto.Changeset</span><span class="p" data-group-id="9841980770-8">{</span><span class="p" data-group-id="9841980770-8">}</span><span class="p" data-group-id="9841980770-7">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="update_profile/1">
+
+  <div class="detail-header">
+    <a href="#update_profile/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_profile(changeset)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L397" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="update_profile/2">
+
+  <div class="detail-header">
+    <a href="#update_profile/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_profile(profile, attrs)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L382" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="update_user_email/2">
+
+  <div class="detail-header">
+    <a href="#update_user_email/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_user_email(user, token)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L139" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Updates the user email using the given token.</p><p>If the token matches, the user email is updated and the token is deleted.
+The confirmed_at date is also updated to the current time.</p>
+  </section>
+</section>
+<section class="detail" id="update_user_password/3">
+
+  <div class="detail-header">
+    <a href="#update_user_password/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_user_password(user, password, attrs)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L201" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Updates the user password.</p><h2 id="update_user_password/3-examples" class="section-heading">
+  <a href="#update_user_password/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_user_password</span><span class="p" data-group-id="2293895445-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;valid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2293895445-2">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="2293895445-2">}</span><span class="p" data-group-id="2293895445-1">)</span><span class="w">
+</span><span class="p" data-group-id="2293895445-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2293895445-4">%</span><span class="nc" data-group-id="2293895445-4">User</span><span class="p" data-group-id="2293895445-4">{</span><span class="p" data-group-id="2293895445-4">}</span><span class="p" data-group-id="2293895445-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_user_password</span><span class="p" data-group-id="2293895445-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2293895445-6">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="2293895445-6">}</span><span class="p" data-group-id="2293895445-5">)</span><span class="w">
+</span><span class="p" data-group-id="2293895445-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2293895445-8">%</span><span class="nc" data-group-id="2293895445-8">Ecto.Changeset</span><span class="p" data-group-id="2293895445-8">{</span><span class="p" data-group-id="2293895445-8">}</span><span class="p" data-group-id="2293895445-7">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="update_user_profile/3">
+
+  <div class="detail-header">
+    <a href="#update_user_profile/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_user_profile(user, user_attrs, profile_attrs)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/accounts.ex#L388" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.23.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

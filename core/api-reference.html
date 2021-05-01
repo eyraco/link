@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.23.0">
+    <meta name="project" content="core v0.1.0">
+
+    <title>API Reference — core v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-9f91ebe876dc01d67920.css" />
+
+    <script src="dist/sidebar_items-dfeb18d2d0.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-60a0c9f10e9e52eae31f.js"></script>
+
+
+  </head>
+  <body data-type="extras">
+    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+core
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+      <a href="readme.html">
+        <img src="assets/logo.svg" alt="core" class="sidebar-projectImage">
+      </a>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+<h1>
+  API Reference <small class="app-vsn">core v0.1.0</small>
+</h1>
+
+  <section class="details-list">
+    <h2 id="modules" class="section-heading">
+  <a href="#modules" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Modules
+</h2>
+
+    <div class="summary">
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.html">Core</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Core keeps the contexts that define your domain
+and business logic.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.html">Core.Accounts</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The Accounts context.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.Email.html">Core.Accounts.Email</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.EmailView.html">Core.Accounts.EmailView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.Profile.html">Core.Accounts.Profile</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This schema contains profile related data for members.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.User.html">Core.Accounts.User</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The User module encapsulates the changesets for creating and updating users.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.UserNotifier.html">Core.Accounts.UserNotifier</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.UserProfileEdit.html">Core.Accounts.UserProfileEdit</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The study type.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.UserToken.html">Core.Accounts.UserToken</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Authorization.html">Core.Authorization</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The authorization system for Core.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Authorization.Node.html">Core.Authorization.Node</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>An authorization node represents a context where principals can gain
+additional roles. They can be nested to create a tree structure.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Authorization.RoleAssignment.html">Core.Authorization.RoleAssignment</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A role assignment entity is used to assign a role to a principal on a
+specific entity.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.EmailLayoutView.html">Core.EmailLayoutView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Factories.html">Core.Factories</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This module provides factory function to be used for tests.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.ImageCatalog.html">Core.ImageCatalog</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.ImageCatalog.Local.html">Core.ImageCatalog.Local</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.ImageCatalog.Unsplash.html">Core.ImageCatalog.Unsplash</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.ImageCatalog.Unsplash.Client.html">Core.ImageCatalog.Unsplash.Client</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.ImageCatalog.Unsplash.HTTP.html">Core.ImageCatalog.Unsplash.HTTP</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Mailer.html">Core.Mailer</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Marks.html">Core.Marks</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Manages instances of marks. These marks are ultimately managed by administrators belonging to certain organizations.
+For the time being a set of hardcoded marks are provided.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Marks.Mark.html">Core.Marks.Mark</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A sticker that represents some kind of authority.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Release.html">Core.Release</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Repo.html">Core.Repo</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Studies.html">Core.Studies</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The Studies context.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Studies.Author.html">Core.Studies.Author</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The schema for a study author.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Studies.Participant.html">Core.Studies.Participant</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The schema for a study participant.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Studies.Study.html">Core.Studies.Study</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The study type.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Studies.StudyEdit.html">Core.Studies.StudyEdit</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The study type.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Studies.StudyPublic.html">Core.Studies.StudyPublic</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The study type.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurfConext.html">Core.SurfConext</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurfConext.AuthorizePlug.html">Core.SurfConext.AuthorizePlug</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This controller manages the OpenID Connect flow with SurfConext.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurfConext.CallbackPlug.html">Core.SurfConext.CallbackPlug</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurfConext.PlugUtils.html">Core.SurfConext.PlugUtils</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurfConext.User.html">Core.SurfConext.User</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurveyTools.html">Core.SurveyTools</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Survey tools allow a researcher to setup a link to an external survey
+tool. The participant goes through the flow described below</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurveyTools.Participant.html">Core.SurveyTools.Participant</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The schema for a study participant.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurveyTools.SurveyTool.html">Core.SurveyTools.SurveyTool</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The survey tool schema.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.SurveyTools.SurveyToolTask.html">Core.SurveyTools.SurveyToolTask</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A task (fill out survey) to be completed by a participant.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Themes.html">Core.Themes</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Defines themes used to categorize studies or tools wihin studies.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.html">CoreWeb</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The entrypoint for defining your web interface, such
+as controllers, views, channels and so on.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.html">CoreWeb.Cldr</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Provides the core functions to retrieve and manage
+the CLDR data that supports formatting and localisation.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Currency.html">CoreWeb.Cldr.Currency</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Date.html">CoreWeb.Cldr.Date</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Date.Interval.html">CoreWeb.Cldr.Date.Interval</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Interval formats allow for software to format intervals like &quot;Jan 10-12, 2008&quot; as a
+shorter and more natural format than &quot;Jan 10, 2008 - Jan 12, 2008&quot;. They are designed
+to take a start and end date, time or datetime plus a formatting pattern
+and use that information to produce a localized format.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.DateTime.html">CoreWeb.Cldr.DateTime</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.DateTime.Format.html">CoreWeb.Cldr.DateTime.Format</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Manages the Date, TIme and DateTime formats
+defined by CLDR.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.DateTime.Formatter.html">CoreWeb.Cldr.DateTime.Formatter</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Implements the compilation and execution of
+date, time and datetime formats.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.DateTime.Interval.html">CoreWeb.Cldr.DateTime.Interval</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Interval formats allow for software to format intervals like &quot;Jan 10-12, 2008&quot; as a
+shorter and more natural format than &quot;Jan 10, 2008 - Jan 12, 2008&quot;. They are designed
+to take a start and end date, time or datetime plus a formatting pattern
+and use that information to produce a localized format.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.DateTime.Relative.html">CoreWeb.Cldr.DateTime.Relative</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Gettext.Plural.html">CoreWeb.Cldr.Gettext.Plural</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Defines a Plural module for Gettext that uses the <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> plural rules.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Interval.html">CoreWeb.Cldr.Interval</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Interval formats allow for software to format intervals like &quot;Jan 10-12, 2008&quot; as a
+shorter and more natural format than &quot;Jan 10, 2008 - Jan 12, 2008&quot;. They are designed
+to take a start and end date, time or datetime plus a formatting pattern
+and use that information to produce a localized format.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Locale.html">CoreWeb.Cldr.Locale</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Backend module that provides functions
+to define new locales.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.html">CoreWeb.Cldr.Number</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Formats numbers and currencies based upon CLDR's decimal formats specification.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.Cardinal.html">CoreWeb.Cldr.Number.Cardinal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Implements cardinal plural rules for numbers.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.Format.html">CoreWeb.Cldr.Number.Format</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to manage the collection of number patterns defined in Cldr.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.Formatter.Decimal.html">CoreWeb.Cldr.Number.Formatter.Decimal</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.Ordinal.html">CoreWeb.Cldr.Number.Ordinal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Implements ordinal plural rules for numbers.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.PluralRule.Range.html">CoreWeb.Cldr.Number.PluralRule.Range</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Implements plural rules for ranges</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.Symbol.html">CoreWeb.Cldr.Number.Symbol</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.System.html">CoreWeb.Cldr.Number.System</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Number.Transliterate.html">CoreWeb.Cldr.Number.Transliterate</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Transliteration for digits and separators.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Rbnf.NumberSystem.html">CoreWeb.Cldr.Rbnf.NumberSystem</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to implement the number system rule-based-number-format rules of CLDR.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Rbnf.Ordinal.html">CoreWeb.Cldr.Rbnf.Ordinal</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to implement the ordinal rule-based-number-format rules of CLDR.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Rbnf.Spellout.html">CoreWeb.Cldr.Rbnf.Spellout</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Functions to implement the spellout rule-based-number-format rules of CLDR.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Time.html">CoreWeb.Cldr.Time</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Cldr.Time.Interval.html">CoreWeb.Cldr.Time.Interval</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Interval formats allow for software to format intervals like &quot;Jan 10-12, 2008&quot; as a
+shorter and more natural format than &quot;Jan 10, 2008 - Jan 12, 2008&quot;. They are designed
+to take a start and end date, time or datetime plus a formatting pattern
+and use that information to produce a localized format.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Dashboard.html">CoreWeb.Dashboard</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Endpoint.html">CoreWeb.Endpoint</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.ErrorView.html">CoreWeb.ErrorView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.FakeSurvey.html">CoreWeb.FakeSurvey</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.FakeSurveyController.html">CoreWeb.FakeSurveyController</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.FakeSurveyView.html">CoreWeb.FakeSurveyView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Gettext.html">CoreWeb.Gettext</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A module providing Internationalization with a gettext-based API.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.ImageCatalogPicker.html">CoreWeb.ImageCatalogPicker</a>
+
+  </div>
+
+    <div class="summary-synopsis"><h3 id="properties" class="section-heading">
+  <a href="#properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Properties
+</h3>
+<ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
+.</li><li><strong>conn</strong> <em>:any, required: true</em></li><li><strong>static_path</strong> <em>:any, required: true</em></li><li><strong>image_catalog</strong> <em>:any, required: true</em></li><li><strong>initial_query</strong> <em>:string, default: &quot;&quot;</em></li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Index.html">CoreWeb.Index</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.LanguageSwitchController.html">CoreWeb.LanguageSwitchController</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.LayoutView.html">CoreWeb.LayoutView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Live.Routes.html">CoreWeb.Live.Routes</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Live.Study.Routes.html">CoreWeb.Live.Study.Routes</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Live.SurveyTool.Routes.html">CoreWeb.Live.SurveyTool.Routes</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Live.User.Routes.html">CoreWeb.Live.User.Routes</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.LiveAssignHelper.html">CoreWeb.LiveAssignHelper</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Automatically setup the current user in LiveViews.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.LiveLocale.html">CoreWeb.LiveLocale</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A LiveView helper that automatically sets the current locale from a session variable.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Loaders.html">CoreWeb.Loaders</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The loaders for the Link application. They integrate with the GreenLight
+framework.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.LocalImageCatalogPlug.html">CoreWeb.LocalImageCatalogPlug</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.ParticipantView.html">CoreWeb.ParticipantView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Plug.LiveLocale.html">CoreWeb.Plug.LiveLocale</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A Plug that sets a session variable to the current locale.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Router.html">CoreWeb.Router</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Router.Helpers.html">CoreWeb.Router.Helpers</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Module with named helpers generated from CoreWeb.Router.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Routes.html">CoreWeb.Routes</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Study.Complete.html">CoreWeb.Study.Complete</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The public study screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Study.Edit.html">CoreWeb.Study.Edit</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The study page for owners.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Study.Public.html">CoreWeb.Study.Public</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The public study screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.SurveyTool.Edit.html">CoreWeb.SurveyTool.Edit</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.SurveyTool.Index.html">CoreWeb.SurveyTool.Index</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.SurveyTool.New.html">CoreWeb.SurveyTool.New</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.SurveyToolTaskView.html">CoreWeb.SurveyToolTaskView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.SurveyToolView.html">CoreWeb.SurveyToolView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Telemetry.html">CoreWeb.Telemetry</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The Telemtry configuration for the Link application.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.User.AwaitConfirmation.html">CoreWeb.User.AwaitConfirmation</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.User.ConfirmToken.html">CoreWeb.User.ConfirmToken</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.User.Profile.html">CoreWeb.User.Profile</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.User.ResetPassword.html">CoreWeb.User.ResetPassword</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.User.ResetPasswordToken.html">CoreWeb.User.ResetPasswordToken</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The password reset token.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.User.Signup.html">CoreWeb.User.Signup</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The home screen.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.UserAuth.html">CoreWeb.UserAuth</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.UserSessionController.html">CoreWeb.UserSessionController</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.UserSessionView.html">CoreWeb.UserSessionView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.UserSettingsController.html">CoreWeb.UserSettingsController</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.UserSettingsView.html">CoreWeb.UserSettingsView</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.UserSocket.html">CoreWeb.UserSocket</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.ViewModel.Card.html">CoreWeb.ViewModel.Card</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Eyra.Core.html">Eyra.Core</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="GoogleSignIn.html">GoogleSignIn</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="GoogleSignIn.AuthorizePlug.html">GoogleSignIn.AuthorizePlug</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This controller manages the OpenID Connect flow with SurfConext.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="GoogleSignIn.CallbackPlug.html">GoogleSignIn.CallbackPlug</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="GoogleSignIn.PlugUtils.html">GoogleSignIn.PlugUtils</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="GoogleSignIn.User.html">GoogleSignIn.User</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="SignInWithApple.html">SignInWithApple</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="SignInWithApple.Backend.html">SignInWithApple.Backend</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="SignInWithApple.CallbackPlug.html">SignInWithApple.CallbackPlug</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="SignInWithApple.Helpers.html">SignInWithApple.Helpers</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="SignInWithApple.User.html">SignInWithApple.User</a>
+
+  </div>
+
+</div>
+
+    </div>
+  </section>
+
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.23.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>
