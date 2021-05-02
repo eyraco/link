@@ -29,6 +29,7 @@ EyraUI.Container.ContentArea.html
 EyraUI.Container.FormArea.html
 EyraUI.Create.html
 EyraUI.ErrorHelpers.html
+EyraUI.FormHelpers.html
 EyraUI.Gettext.html
 EyraUI.Grid.AbsoluteGrid.html
 EyraUI.Hero.HeroLarge.html
@@ -64,7 +65,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-af56c0c2ac.js
-dist/sidebar_items-0d7fbb2522.js
+dist/search_items-ac140969cf.js
+dist/sidebar_items-ce842cf23c.js
 index.html
 search.html

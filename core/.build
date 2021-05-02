@@ -10,6 +10,8 @@ Core.Accounts.html
 Core.Authorization.Node.html
 Core.Authorization.RoleAssignment.html
 Core.Authorization.html
+Core.DataUploader.ClientScript.html
+Core.DataUploader.html
 Core.EmailLayoutView.html
 Core.Factories.html
 Core.ImageCatalog.Local.html
@@ -66,6 +68,8 @@ CoreWeb.Cldr.Time.Interval.html
 CoreWeb.Cldr.Time.html
 CoreWeb.Cldr.html
 CoreWeb.Dashboard.html
+CoreWeb.DataLoaderController.html
+CoreWeb.DataLoaderView.html
 CoreWeb.Endpoint.html
 CoreWeb.ErrorView.html
 CoreWeb.FakeSurvey.html
@@ -76,6 +80,7 @@ CoreWeb.ImageCatalogPicker.html
 CoreWeb.Index.html
 CoreWeb.LanguageSwitchController.html
 CoreWeb.LayoutView.html
+CoreWeb.Live.DataUploader.Routes.html
 CoreWeb.Live.Routes.html
 CoreWeb.Live.Study.Routes.html
 CoreWeb.Live.SurveyTool.Routes.html
@@ -133,8 +138,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-c094f2f2ae.js
-dist/sidebar_items-dfeb18d2d0.js
+dist/search_items-33151ab727.js
+dist/sidebar_items-9e6c1fc02e.js
 index.html
 readme.html
 search.html
