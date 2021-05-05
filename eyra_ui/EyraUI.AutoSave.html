@@ -10,7 +10,7 @@
     <title>EyraUI.AutoSave — eyra_ui v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-ce842cf23c.js"></script>
+    <script src="dist/sidebar_items-895769029a.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -126,7 +126,21 @@ EyraUI.AutoSave <small>behaviour</small> <small class="app-vsn">(eyra_ui v0.1.0)
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#mount/5">mount(entity_name, entity, changeset, path_provider, socket)</a>
+    <a href="#mount/4">mount(entity_name, entity, changeset, socket)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#put_error_flash/1">put_error_flash(socket)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#put_saved_flash/1">put_saved_flash(socket)</a>
 
   </div>
 
@@ -162,6 +176,13 @@ EyraUI.AutoSave <small>behaviour</small> <small class="app-vsn">(eyra_ui v0.1.0)
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_changeset/3">get_changeset(entity, type, attrs)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:init/3">init(params, session, socket)</a>
 
   </div>
 
@@ -246,14 +267,48 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="mount/5">
+<section class="detail" id="mount/4">
 
   <div class="detail-header">
-    <a href="#mount/5" class="detail-link" title="Link to this function">
+    <a href="#mount/4" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">mount(entity_name, entity, changeset, path_provider, socket)</h1>
+    <h1 class="signature">mount(entity_name, entity, changeset, socket)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="put_error_flash/1">
+
+  <div class="detail-header">
+    <a href="#put_error_flash/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">put_error_flash(socket)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="put_saved_flash/1">
+
+  <div class="detail-header">
+    <a href="#put_saved_flash/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">put_saved_flash(socket)</h1>
 
 
   </div>
@@ -345,6 +400,31 @@ Callbacks
       <div class="specs">
 
           <pre>get_changeset(entity :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(), type :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>(), attrs :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="c:init/3">
+
+  <div class="detail-header">
+    <a href="#c:init/3" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">init(params, session, socket)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>init(params :: %{}, session :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>(), socket :: <a href="https://hexdocs.pm/phoenix_live_view/0.15.4/Phoenix.LiveView.Socket.html#t:t/0">Phoenix.LiveView.Socket.t</a>()) ::
+  <a href="https://hexdocs.pm/phoenix_live_view/0.15.4/Phoenix.LiveView.Socket.html#t:t/0">Phoenix.LiveView.Socket.t</a>()</pre>
 
       </div>
 

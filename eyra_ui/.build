@@ -6,9 +6,11 @@ EyraUI.Button.LinkButton.html
 EyraUI.Button.PrimaryAlpineButton.html
 EyraUI.Button.PrimaryButton.html
 EyraUI.Button.PrimaryIconButton.html
+EyraUI.Button.PrimaryLabelButton.html
 EyraUI.Button.PrimaryLiveViewButton.html
 EyraUI.Button.PrimaryWideButton.html
 EyraUI.Button.SecondaryAlpineButton.html
+EyraUI.Button.SecondaryLabelButton.html
 EyraUI.Button.SecondaryLiveViewButton.html
 EyraUI.Button.SubmitButton.html
 EyraUI.Button.SubmitWideButton.html
@@ -65,7 +67,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-ac140969cf.js
-dist/sidebar_items-ce842cf23c.js
+dist/search_items-08def8daae.js
+dist/sidebar_items-895769029a.js
 index.html
 search.html
