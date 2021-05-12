@@ -19,6 +19,7 @@ Core.ImageCatalog.Unsplash.Client.html
 Core.ImageCatalog.Unsplash.HTTP.html
 Core.ImageCatalog.Unsplash.html
 Core.ImageCatalog.html
+Core.ImageHelpers.html
 Core.Mailer.html
 Core.Marks.Mark.html
 Core.Marks.html
@@ -70,11 +71,13 @@ CoreWeb.Cldr.html
 CoreWeb.Dashboard.html
 CoreWeb.DataLoaderController.html
 CoreWeb.DataLoaderView.html
+CoreWeb.Devices.html
 CoreWeb.Endpoint.html
 CoreWeb.ErrorView.html
 CoreWeb.FakeSurvey.html
 CoreWeb.FakeSurveyController.html
 CoreWeb.FakeSurveyView.html
+CoreWeb.FileUploader.html
 CoreWeb.Gettext.html
 CoreWeb.ImageCatalogPicker.html
 CoreWeb.Index.html
@@ -138,8 +141,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-ccd011096c.js
-dist/sidebar_items-f5b346bacc.js
+dist/search_items-d0ce879cce.js
+dist/sidebar_items-201d153403.js
 index.html
 readme.html
 search.html
