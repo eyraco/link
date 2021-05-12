@@ -10,6 +10,7 @@ Core.Accounts.html
 Core.Authorization.Node.html
 Core.Authorization.RoleAssignment.html
 Core.Authorization.html
+Core.BundleOverrides.html
 Core.DataUploader.ClientScript.html
 Core.DataUploader.html
 Core.EmailLayoutView.html
@@ -126,6 +127,9 @@ GoogleSignIn.CallbackPlug.html
 GoogleSignIn.PlugUtils.html
 GoogleSignIn.User.html
 GoogleSignIn.html
+Link.Dashboard.html
+Link.html
+Next.html
 SignInWithApple.Backend.html
 SignInWithApple.CallbackPlug.html
 SignInWithApple.Helpers.html
@@ -141,8 +145,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-d0ce879cce.js
-dist/sidebar_items-201d153403.js
+dist/search_items-432ff91d4e.js
+dist/sidebar_items-b2248c1c68.js
 index.html
 readme.html
 search.html
