@@ -42,7 +42,13 @@ Core.SurveyTools.SurveyTool.html
 Core.SurveyTools.SurveyToolTask.html
 Core.SurveyTools.html
 Core.Themes.html
+Core.WebPush.Backend.html
+Core.WebPush.Keys.html
+Core.WebPush.PushSubscription.html
+Core.WebPush.Subscription.html
+Core.WebPush.html
 Core.html
+CoreWeb.ChangesetView.html
 CoreWeb.Cldr.Currency.html
 CoreWeb.Cldr.Date.Interval.html
 CoreWeb.Cldr.Date.html
@@ -78,6 +84,7 @@ CoreWeb.ErrorView.html
 CoreWeb.FakeSurvey.html
 CoreWeb.FakeSurveyController.html
 CoreWeb.FakeSurveyView.html
+CoreWeb.FallbackController.html
 CoreWeb.FileUploader.html
 CoreWeb.Gettext.html
 CoreWeb.ImageCatalogPicker.html
@@ -95,6 +102,8 @@ CoreWeb.Loaders.html
 CoreWeb.LocalImageCatalogPlug.html
 CoreWeb.ParticipantView.html
 CoreWeb.Plug.LiveLocale.html
+CoreWeb.PushSubscriptionController.html
+CoreWeb.PushSubscriptionView.html
 CoreWeb.Router.Helpers.html
 CoreWeb.Router.html
 CoreWeb.Routes.html
@@ -119,6 +128,7 @@ CoreWeb.UserSessionView.html
 CoreWeb.UserSettingsController.html
 CoreWeb.UserSettingsView.html
 CoreWeb.UserSocket.html
+CoreWeb.VapidPublicKeyController.html
 CoreWeb.ViewModel.Card.html
 CoreWeb.html
 Eyra.Core.html
@@ -129,6 +139,7 @@ GoogleSignIn.User.html
 GoogleSignIn.html
 Link.Dashboard.html
 Link.html
+Mix.Tasks.WebPush.Keys.html
 Next.html
 SignInWithApple.Backend.html
 SignInWithApple.CallbackPlug.html
@@ -145,8 +156,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-432ff91d4e.js
-dist/sidebar_items-b2248c1c68.js
+dist/search_items-549e4944b4.js
+dist/sidebar_items-cd0ff38374.js
 index.html
 readme.html
 search.html
