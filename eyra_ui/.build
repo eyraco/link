@@ -42,6 +42,7 @@ EyraUI.Hero.HeroImage.html
 EyraUI.Hero.HeroLarge.html
 EyraUI.Hero.HeroSmall.html
 EyraUI.Icon.html
+EyraUI.Image.html
 EyraUI.Line.html
 EyraUI.Panel.Panel.html
 EyraUI.Panel.USP.html
@@ -74,7 +75,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-a08f0329ab.js
-dist/sidebar_items-01c7156c9a.js
+dist/search_items-0a86f52487.js
+dist/sidebar_items-fa0767b881.js
 index.html
 search.html

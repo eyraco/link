@@ -10,7 +10,7 @@
     <title>Core.ImageCatalog — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-9f91ebe876dc01d67920.css" />
 
-    <script src="dist/sidebar_items-cd0ff38374.js"></script>
+    <script src="dist/sidebar_items-4dd2fb43b9.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -251,6 +251,8 @@ Types
           <pre>image_info() :: %{
   id: <a href="#t:image_id/0">image_id</a>(),
   url: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
+  width: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
+  height: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
   srcset: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
   blur_hash: nil | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
   attribution: nil | <a href="https://hexdocs.pm/phoenix_html/2.14.3/Phoenix.HTML.Safe.html#t:t/0">Phoenix.HTML.Safe.t</a>()
@@ -299,7 +301,7 @@ Types
     </a>
     <h1 class="signature">meta_info()</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L13" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L15" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -335,7 +337,7 @@ Types
     </a>
     <h1 class="signature">search_info_result()</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L27" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L29" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -364,7 +366,7 @@ Types
     </a>
     <h1 class="signature">search_result()</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L22" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L24" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -435,7 +437,7 @@ Callbacks
     </a>
     <h1 class="signature">info(image, opts)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L42" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L44" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -464,7 +466,7 @@ Callbacks
     </a>
     <h1 class="signature">search(query, page, page_size)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L32" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L34" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -494,7 +496,7 @@ Callbacks
     </a>
     <h1 class="signature">search_info(query, page, page_size, opts)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L34" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/image_catalog.ex#L36" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
