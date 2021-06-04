@@ -7,10 +7,10 @@
     <meta name="generator" content="ExDoc v0.23.0">
     <meta name="project" content="core v0.1.0">
 
-    <title>mix web_push.keys — core v0.1.0</title>
+    <title>Core.Mailer.SignalHandlers — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-9f91ebe876dc01d67920.css" />
 
-    <script src="dist/sidebar_items-4dd2fb43b9.js"></script>
+    <script src="dist/sidebar_items-6ca22a10f7.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -18,7 +18,7 @@
 
 
   </head>
-  <body data-type="tasks">
+  <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
 
 <div class="main">
@@ -67,8 +67,6 @@ core
       <li><a id="modules-list" href="#full-list">Modules</a></li>
 
 
-      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
-
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -79,9 +77,9 @@ core
     <div id="content" class="content-inner">
 
       <h1>
-mix web_push.keys <small class="app-vsn">(core v0.1.0)</small>
+Core.Mailer.SignalHandlers <small class="app-vsn">(core v0.1.0)</small>
 
-          <a href="https://github.com/eyra/eylixir/blob/master/lib/web_push.ex#L1" title="View Source" class="view-source" rel="help">
+          <a href="https://github.com/eyra/eylixir/blob/master/lib/core/mailer/signal_handlers.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -105,9 +103,11 @@ mix web_push.keys <small class="app-vsn">(core v0.1.0)</small>
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#run/1">run(_)</a>
+    <a href="#render/3">render(email, template, assigns \\ [])</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>Render an Phoenix template and set the body on the email.</p></div>
 
 </div>
 
@@ -125,16 +125,18 @@ mix web_push.keys <small class="app-vsn">(core v0.1.0)</small>
 Functions
           </h1>
           <div class="functions-list">
-<section class="detail" id="run/1">
+<section class="detail" id="render/3">
+
+    <span id="render/2"></span>
 
   <div class="detail-header">
-    <a href="#run/1" class="detail-link" title="Link to this function">
+    <a href="#render/3" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">run(_)</h1>
+    <h1 class="signature">render(email, template, assigns \\ [])</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/web_push.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/mailer/signal_handlers.ex#L3" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -144,7 +146,9 @@ Functions
 
   <section class="docstring">
 
-
+<p>Render an Phoenix template and set the body on the email.</p><p>Pass an atom as the template name (:welcome_email) to render HTML <em>and</em> plain
+text emails. Use a string if you only want to render one type, e.g.
+&quot;welcome_email.text&quot; or &quot;welcome_email.html&quot;. Scroll to the top for more examples.</p>
   </section>
 </section>
 
