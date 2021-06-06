@@ -1,9 +1,4 @@
 404.html
-Core.APNS.Backend.html
-Core.APNS.DeviceToken.html
-Core.APNS.LoggingBackend.html
-Core.APNS.SignalHandlers.html
-Core.APNS.html
 Core.Accounts.Email.html
 Core.Accounts.EmailView.html
 Core.Accounts.Profile.html
@@ -62,7 +57,6 @@ Core.WebPush.SignalHandlers.html
 Core.WebPush.Subscription.html
 Core.WebPush.html
 Core.html
-CoreWeb.APNSDeviceTokenController.html
 CoreWeb.ChangesetView.html
 CoreWeb.Cldr.Currency.html
 CoreWeb.Cldr.Date.Interval.html
@@ -171,8 +165,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-1d382091fe.js
-dist/sidebar_items-6b0a0dfdea.js
+dist/search_items-06536c2bf0.js
+dist/sidebar_items-6ca22a10f7.js
 index.html
 readme.html
 search.html
