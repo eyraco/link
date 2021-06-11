@@ -1,5 +1,4 @@
 defmodule CoreWeb.Storybook.Component do
-
   defmacro __using__(_opts) do
     quote do
       import Surface, except: [sigil_H: 2]

@@ -7,7 +7,16 @@ defmodule CoreWeb.Storybook do
   alias EyraUI.Hero.HeroSmall
   alias EyraUI.Container.{ContentArea}
   alias EyraUI.Text.{Title1, Title2, Title3, Title4, Title5, Title6}
-  alias EyraUI.Button.{PrimaryButton, PrimaryAlpineButton, PrimaryLiveViewButton, SecondaryAlpineButton, SecondaryLabelButton, SecondaryLiveViewButton}
+
+  alias EyraUI.Button.{
+    PrimaryButton,
+    PrimaryAlpineButton,
+    PrimaryLiveViewButton,
+    SecondaryAlpineButton,
+    SecondaryLabelButton,
+    SecondaryLiveViewButton
+  }
+
   alias EyraUI.{Spacing}
 
   alias CoreWeb.Storybook.Component
