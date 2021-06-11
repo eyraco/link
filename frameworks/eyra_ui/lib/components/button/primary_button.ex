@@ -8,6 +8,7 @@ defmodule EyraUI.Button.PrimaryButton do
   prop(to, :string, required: true)
   prop(label, :string, required: true)
   prop(bg_color, :css_class, default: "bg-primary")
+  prop(text_color, :css_class, default: "text-white")
 
   def render(assigns) do
     ~H"""
@@ -15,7 +16,7 @@ defmodule EyraUI.Button.PrimaryButton do
       <div class="flex">
         <div class="flex-wrap pt-15px pb-15px active:shadow-top4px active:pt-4 active:pb-14px focus:outline-none rounded {{@bg_color}}">
           <div class="flex flex-col justify-center h-full items-center rounded">
-            <div class="text-white text-button font-button pl-4 pr-4">
+            <div class="text-button font-button pl-4 pr-4 {{@text_color}}">
               {{ @label }}
             </div>
           </div>

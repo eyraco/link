@@ -39,6 +39,11 @@ defmodule CoreWeb.Live.Routes do
           pipe_through(:browser)
           live_dashboard("/phoenix-dashboard", metrics: CoreWeb.Telemetry)
         end
+
+        scope "/", CoreWeb do
+          pipe_through([:browser])
+          live("/storybook", Storybook)
+        end
       end
     end
   end
