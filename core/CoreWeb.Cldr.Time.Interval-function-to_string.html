@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.24.2">
+    <meta name="project" content="core v0.1.0">
+
+    <title>CoreWeb.Cldr.Time.Interval.to_string — core v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+
+    <script src="dist/sidebar_items-e1cbd326e6.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+core
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+      <a href="readme.html">
+        <img src="assets/logo.svg" alt="core" class="sidebar-projectImage">
+      </a>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+<h1>CoreWeb.Cldr.Time.Interval.to_string</h1>
+
+<div class="deprecated">
+  You're seeing just the function <code>to_string</code>, go back to <a href="CoreWeb.Cldr.Time.Interval.html">CoreWeb.Cldr.Time.Interval</a> module for more information.
+</div>
+
+<section class="detail" id="to_string/3">
+
+    <span id="to_string/2"></span>
+
+  <div class="detail-header">
+    <a href="#to_string/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">to_string(from, to, options \\ [])</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core_web/cldr.ex#L1" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>to_string(<a href="https://hexdocs.pm/elixir/Calendar.html#t:time/0">Calendar.time</a>(), <a href="https://hexdocs.pm/elixir/Calendar.html#t:time/0">Calendar.time</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()} | {:error, {<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}}</pre>
+
+      </div>
+
+<p>Returns a string representing the formatted
+interval formed by two times.</p><h2 id="to_string/3-arguments" class="section-heading">
+  <a href="#to_string/3-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Arguments
+</h2>
+<ul><li><p><code class="inline">from</code> is any map that conforms to the
+<code class="inline">Calendar.time</code> type.</p></li><li><p><code class="inline">to</code> is any map that conforms to the
+<code class="inline">Calendar.time</code> type. <code class="inline">to</code> must occur
+on or after <code class="inline">from</code>.</p></li><li><p><code class="inline">options</code> is a keyword list of options. The default is <code class="inline">[]</code>.</p></li></ul><h2 id="to_string/3-options" class="section-heading">
+  <a href="#to_string/3-options" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Options
+</h2>
+<ul><li><p><code class="inline">:format</code> is one of <code class="inline">:short</code>, <code class="inline">:medium</code> or <code class="inline">:long</code> or a
+specific format type or a string representing of an interval
+format. The default is <code class="inline">:medium</code>.</p></li><li><p><code class="inline">:style</code> supports dfferent formatting styles. The
+alternatives are <code class="inline">:time</code>, <code class="inline">:zone</code>,
+and <code class="inline">:flex</code>. The default is <code class="inline">:time</code>.</p></li><li><p><code class="inline">locale</code> is any valid locale name returned by <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_locale_names/0"><code class="inline">Cldr.known_locale_names/0</code></a>
+or a <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html"><code class="inline">Cldr.LanguageTag</code></a> struct.  The default is <a href="CoreWeb.Cldr.html#get_locale/0"><code class="inline">Elixir.CoreWeb.Cldr.get_locale/0</code></a></p></li><li><p><code class="inline">number_system:</code> a number system into which the formatted date digits should
+be transliterated</p></li></ul><h2 id="to_string/3-returns" class="section-heading">
+  <a href="#to_string/3-returns" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Returns
+</h2>
+<ul><li><p><code class="inline">{:ok, string}</code> or</p></li><li><p><code class="inline">{:error, {exception, reason}}</code></p></li></ul><h2 id="to_string/3-notes" class="section-heading">
+  <a href="#to_string/3-notes" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Notes
+</h2>
+<ul><li><p>For more information on interval format string
+see <a href="https://hexdocs.pm/ex_cldr_dates_times/2.7.2/Cldr.Interval.html"><code class="inline">Cldr.Interval</code></a>.</p></li><li><p>The available predefined formats that can be applied are the
+keys of the map returned by <code class="inline">Cldr.DateTime.Format.interval_formats(&quot;en&quot;, :gregorian)</code>
+where <code class="inline">&quot;en&quot;</code> can be replaced by any configured locale name and <code class="inline">:gregorian</code>
+is the underlying <code class="inline">CLDR</code> calendar type.</p></li><li><p>In the case where <code class="inline">from</code> and <code class="inline">to</code> are equal, a single
+time is formatted instead of an interval</p></li></ul><h2 id="to_string/3-examples" class="section-heading">
+  <a href="#to_string/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Time.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~T[10:00:00]</span><span class="p">,</span><span class="w"> </span><span class="ld">~T[10:03:00]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:short</span><span class="w">
+</span><span class="p" data-group-id="1640483450-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10 – 10 AM&quot;</span><span class="p" data-group-id="1640483450-1">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Time.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~T[10:00:00]</span><span class="p">,</span><span class="w"> </span><span class="ld">~T[10:03:00]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:medium</span><span class="w">
+</span><span class="p" data-group-id="1640483450-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10:00 – 10:03 AM&quot;</span><span class="p" data-group-id="1640483450-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Time.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~T[10:00:00]</span><span class="p">,</span><span class="w"> </span><span class="ld">~T[10:03:00]</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
+</span><span class="p" data-group-id="1640483450-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10:00 – 10:03 AM&quot;</span><span class="p" data-group-id="1640483450-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Time.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~T[10:00:00]</span><span class="p">,</span><span class="w"> </span><span class="ld">~T[10:03:00]</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="p">,</span><span class="w"> </span><span class="ss">style</span><span class="p">:</span><span class="w"> </span><span class="ss">:flex</span><span class="w">
+</span><span class="p" data-group-id="1640483450-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10:00 – 10:03 in the morning&quot;</span><span class="p" data-group-id="1640483450-4">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Time.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~U[2020-01-01 00:00:00.0Z]</span><span class="p">,</span><span class="w"> </span><span class="ld">~U[2020-01-01 10:00:00.0Z]</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="p">,</span><span class="w"> </span><span class="ss">style</span><span class="p">:</span><span class="w"> </span><span class="ss">:flex</span><span class="w">
+</span><span class="p" data-group-id="1640483450-5">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;12:00 – 10:00 in the morning&quot;</span><span class="p" data-group-id="1640483450-5">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Time.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~U[2020-01-01 00:00:00.0Z]</span><span class="p">,</span><span class="w"> </span><span class="ld">~U[2020-01-01 10:00:00.0Z]</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="p">,</span><span class="w"> </span><span class="ss">style</span><span class="p">:</span><span class="w"> </span><span class="ss">:zone</span><span class="w">
+</span><span class="p" data-group-id="1640483450-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;12:00 – 10:00 AM Etc/UTC&quot;</span><span class="p" data-group-id="1640483450-6">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Time.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~T[10:00:00]</span><span class="p">,</span><span class="w"> </span><span class="ld">~T[10:03:00]</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="p">,</span><span class="w"> </span><span class="ss">style</span><span class="p">:</span><span class="w"> </span><span class="ss">:flex</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;th&quot;</span><span class="w">
+</span><span class="p" data-group-id="1640483450-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10:00 – 10:03 ในตอนเช้า&quot;</span><span class="p" data-group-id="1640483450-7">}</span></code></pre>
+  </section>
+</section>
+
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.24.2) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

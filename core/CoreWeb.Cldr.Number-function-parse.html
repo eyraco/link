@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.24.2">
+    <meta name="project" content="core v0.1.0">
+
+    <title>CoreWeb.Cldr.Number.parse — core v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+
+    <script src="dist/sidebar_items-e1cbd326e6.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+core
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+      <a href="readme.html">
+        <img src="assets/logo.svg" alt="core" class="sidebar-projectImage">
+      </a>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+<h1>CoreWeb.Cldr.Number.parse</h1>
+
+<div class="deprecated">
+  You're seeing just the function <code>parse</code>, go back to <a href="CoreWeb.Cldr.Number.html">CoreWeb.Cldr.Number</a> module for more information.
+</div>
+
+<section class="detail" id="parse/2">
+
+    <span id="parse/1"></span>
+
+  <div class="detail-header">
+    <a href="#parse/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">parse(string, options \\ [])</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core_web/cldr.ex#L1" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Parse a string locale-aware manner and return
+a number.</p><h2 id="parse/2-arguments" class="section-heading">
+  <a href="#parse/2-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Arguments
+</h2>
+<ul><li><p><code class="inline">string</code> is any <code class="inline">String.t</code></p></li><li><p><code class="inline">options</code> is a keyword list of options</p></li></ul><h2 id="parse/2-options" class="section-heading">
+  <a href="#parse/2-options" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Options
+</h2>
+<ul><li><p><code class="inline">:number</code> is one of <code class="inline">:integer</code>, <code class="inline">:float</code>,
+<code class="inline">:decimal</code> or <code class="inline">nil</code>. The default is <code class="inline">nil</code>
+meaning that the type auto-detected as either
+an <code class="inline">integer</code> or a <code class="inline">float</code>.</p></li><li><p><code class="inline">:locale</code> is any locale returned by
+<a href="CoreWeb.Cldr.html#known_locale_names/0"><code class="inline">CoreWeb.Cldr.known_locale_names/0</code></a>
+or a <code class="inline">Cldr.LanguageTag.t</code>. The default is
+<a href="CoreWeb.Cldr.html#get_locale/0"><code class="inline">CoreWeb.Cldr.get_locale/0</code></a>.</p></li></ul><h2 id="parse/2-returns" class="section-heading">
+  <a href="#parse/2-returns" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Returns
+</h2>
+<ul><li><p>A number of the requested or default type or</p></li><li><p><code class="inline">{:error, {exception, error}}</code> if no number could be determined</p></li></ul><h2 id="parse/2-notes" class="section-heading">
+  <a href="#parse/2-notes" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Notes
+</h2>
+<p>This function parses a string to return a number but
+in a locale-aware manner. It will normalise grouping
+characters and decimal separators, different forms of
+the <code class="inline">+</code> and <code class="inline">-</code> symbols that appear in Unicode and
+strips any <code class="inline">_</code> characters that might be used for
+formatting in a string. It then parses the number
+using the Elixir standard library functions.</p><h2 id="parse/2-examples" class="section-heading">
+  <a href="#parse/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="4678929917-1">(</span><span class="s">&quot;＋1.000,34&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p" data-group-id="4678929917-1">)</span><span class="w">
+</span><span class="p" data-group-id="4678929917-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="mf">1000.34</span><span class="p" data-group-id="4678929917-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="4678929917-3">(</span><span class="s">&quot;-1_000_000.34&quot;</span><span class="p" data-group-id="4678929917-3">)</span><span class="w">
+</span><span class="p" data-group-id="4678929917-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1000000.34</span><span class="p" data-group-id="4678929917-4">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="4678929917-5">(</span><span class="s">&quot;1.000&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">number</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="4678929917-5">)</span><span class="w">
+</span><span class="p" data-group-id="4678929917-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p" data-group-id="4678929917-6">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="4678929917-7">(</span><span class="s">&quot;＋1.000,34&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">number</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="4678929917-7">)</span><span class="w">
+</span><span class="p" data-group-id="4678929917-8">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="4678929917-9">{</span><span class="nc">Cldr.Number.ParseError</span><span class="p">,</span><span class="w">
+   </span><span class="s">&quot;The string </span><span class="se">\&quot;</span><span class="s">＋1.000,34</span><span class="se">\&quot;</span><span class="s"> could not be parsed as a number&quot;</span><span class="p" data-group-id="4678929917-9">}</span><span class="p" data-group-id="4678929917-8">}</span></code></pre>
+  </section>
+</section>
+
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.24.2) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.24.2">
+    <meta name="project" content="core v0.1.0">
+
+    <title>CoreWeb.Cldr.DateTime.Format.date_time_available_formats — core v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+
+    <script src="dist/sidebar_items-e1cbd326e6.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+core
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+      <a href="readme.html">
+        <img src="assets/logo.svg" alt="core" class="sidebar-projectImage">
+      </a>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+<h1>CoreWeb.Cldr.DateTime.Format.date_time_available_formats</h1>
+
+<div class="deprecated">
+  You're seeing just the function <code>date_time_available_formats</code>, go back to <a href="CoreWeb.Cldr.DateTime.Format.html">CoreWeb.Cldr.DateTime.Format</a> module for more information.
+</div>
+
+<section class="detail" id="date_time_available_formats/2">
+
+    <span id="date_time_available_formats/0"></span>
+
+    <span id="date_time_available_formats/1"></span>
+
+  <div class="detail-header">
+    <a href="#date_time_available_formats/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">date_time_available_formats(locale \\ CoreWeb.Cldr.get_locale(), calendar \\ Cldr.Calendar.default_cldr_calendar())</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core_web/cldr.ex#L1" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>date_time_available_formats(
+  <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>() | <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>(),
+  <a href="#t:calendar/0">calendar</a>()
+) :: {:ok, <a href="#t:formats/0">formats</a>()}</pre>
+
+      </div>
+
+<p>Returns a map of the available non-standard datetime formats for a
+given locale and calendar.</p><h2 id="date_time_available_formats/2-arguments" class="section-heading">
+  <a href="#date_time_available_formats/2-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Arguments
+</h2>
+<ul><li><p><code class="inline">locale</code> is any locale returned by <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_locale_names/0"><code class="inline">Cldr.known_locale_names/0</code></a>
+or a <code class="inline">Cldr.LanguageTag.t()</code></p></li><li><p><code class="inline">calendar</code> is any calendar returned by <a href="https://hexdocs.pm/ex_cldr_dates_times/2.7.2/Cldr.DateTime.Format.html#calendars_for/1"><code class="inline">Cldr.DateTime.Format.calendars_for/1</code></a>
+The default is <code class="inline">:gregorian</code></p></li></ul><h2 id="date_time_available_formats/2-examples" class="section-heading">
+  <a href="#date_time_available_formats/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples:
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">date_time_available_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+</span><span class="p" data-group-id="2894167267-1">{</span><span class="w">
+  </span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="2894167267-2">%{</span><span class="w">
+    </span><span class="ss">bh</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h B&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">bhm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm B&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">bhms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss B&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">d</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;d&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">e</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ccc&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">e_bhm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E h:mm B&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">e_bhms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E h:mm:ss B&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">e_hm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E HH:mm&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">e_hms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E HH:mm:ss&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">ed</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;d E&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">ehm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E h:mm a&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">ehms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E h:mm:ss a&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">gy</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;y G&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">gy_mm_md</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMM d, y G&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">gy_mmm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMM y G&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">gy_mmm_ed</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E, MMM d, y G&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h a&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">hm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm a&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">hms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">hmsv</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a v&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">hmv</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm a v&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">m</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;L&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">m_ed</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E, M/d&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">md</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;M/d&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">mm_md</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMM d&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">mmm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;LLL&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">mmm_ed</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E, MMM d&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">mmm_md</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMMM d&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">mmmmw_count_one</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&#39;week&#39; W &#39;of&#39; MMMM&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">mmmmw_count_other</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&#39;week&#39; W &#39;of&#39; MMMM&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">ms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mm:ss&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_m</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;M/y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_m_ed</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E, M/d/y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_md</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;M/d/y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_mm_md</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMM d, y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_mmm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMM y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_mmm_ed</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;E, MMM d, y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_mmmm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMMM y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_qqq</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;QQQ y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">y_qqqq</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;QQQQ y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">yw_count_one</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&#39;week&#39; w &#39;of&#39; Y&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">yw_count_other</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&#39;week&#39; w &#39;of&#39; Y&quot;</span><span class="w">
+  </span><span class="p" data-group-id="2894167267-2">}</span><span class="w">
+</span><span class="p" data-group-id="2894167267-1">}</span></code></pre>
+  </section>
+</section>
+
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.24.2) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+            <a href="api-reference.html" title="API reference" class="line footer-button">API Reference</a>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

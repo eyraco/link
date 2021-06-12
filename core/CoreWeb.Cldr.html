@@ -4,22 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.23.0">
+    <meta name="generator" content="ExDoc v0.24.2">
     <meta name="project" content="core v0.1.0">
 
     <title>CoreWeb.Cldr — core v0.1.0</title>
-    <link rel="stylesheet" href="dist/elixir-9f91ebe876dc01d67920.css" />
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-47c9a25193.js"></script>
+    <script src="dist/sidebar_items-e1cbd326e6.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-60a0c9f10e9e52eae31f.js"></script>
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
 
 
   </head>
   <body data-type="modules">
-    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
 
 <div class="main">
 
@@ -36,7 +43,7 @@
       <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
     </button>
     <label class="search-label">
-      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
     </label>
   </form>
 
@@ -62,9 +69,9 @@ core
   </div>
 
   <ul class="sidebar-listNav">
-    <li><a id="extras-list" href="#full-list">Pages</a></li>
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
 
-      <li><a id="modules-list" href="#full-list">Modules</a></li>
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
 
 
   </ul>
@@ -115,7 +122,7 @@ territories.</p>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#available_locale_name?/1"><code class="inline">Cldr.available_locale_name?/1</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#available_locale_name?/1"><code class="inline">Cldr.available_locale_name?/1</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -152,7 +159,7 @@ does not specify one and none can be inferred.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>Return the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> functions that
+    <div class="summary-synopsis"><p>Return the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a> functions that
 take an optional locale parameter for which a locale is not supplied.</p></div>
 
 </div>
@@ -162,7 +169,7 @@ take an optional locale parameter for which a locale is not supplied.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_calendars/0"><code class="inline">Cldr.known_calendars/0</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_calendars/0"><code class="inline">Cldr.known_calendars/0</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -171,7 +178,7 @@ take an optional locale parameter for which a locale is not supplied.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_currencies/0"><code class="inline">Cldr.known_currencies/0</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_currencies/0"><code class="inline">Cldr.known_currencies/0</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -203,7 +210,7 @@ name is configured and available in Gettext.</p></div>
 
     <div class="summary-synopsis"><p>Returns a list of GetText locale names but in CLDR format with
 underscore replaced by hyphen in order to facilitate comparisons
-with <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> locale names.</p></div>
+with <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a> locale names.</p></div>
 
 </div>
 <div class="summary-row">
@@ -213,7 +220,7 @@ with <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">
   </div>
 
     <div class="summary-synopsis"><p>Returns either the <code class="inline">locale_name</code> or <code class="inline">false</code> based upon
-whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a>.</p></div>
+whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -241,7 +248,7 @@ name is configured and available in Cldr.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>Returns a list of atoms representing the number systems types known to <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a>.</p></div>
+    <div class="summary-synopsis"><p>Returns a list of atoms representing the number systems types known to <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -250,7 +257,7 @@ name is configured and available in Cldr.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_number_systems/0"><code class="inline">Cldr.known_number_systems/0</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_number_systems/0"><code class="inline">Cldr.known_number_systems/0</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -260,7 +267,7 @@ name is configured and available in Cldr.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>Returns either the RBNF <code class="inline">locale_name</code> or <code class="inline">false</code> based upon
-whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a>
+whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a>
 and has RBNF rules defined.</p></div>
 
 </div>
@@ -291,7 +298,7 @@ formats (RBNF).</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_territories/0"><code class="inline">Cldr.known_territories/0</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_territories/0"><code class="inline">Cldr.known_territories/0</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -310,7 +317,7 @@ of common symbols in numbers, currencies and dates</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>Set the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> functions that
+    <div class="summary-synopsis"><p>Set the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a> functions that
 take an optional locale parameter for which a locale is not supplied.</p></div>
 
 </div>
@@ -339,7 +346,7 @@ but not known in CLDR.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_calendar/1"><code class="inline">Cldr.validate_calendar/1</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_calendar/1"><code class="inline">Cldr.validate_calendar/1</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -348,7 +355,7 @@ but not known in CLDR.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_currency/1"><code class="inline">Cldr.validate_currency/1</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_currency/1"><code class="inline">Cldr.validate_currency/1</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -366,7 +373,7 @@ but not known in CLDR.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_number_system/1"><code class="inline">Cldr.validate_number_system/1</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_number_system/1"><code class="inline">Cldr.validate_number_system/1</code></a>.</p></div>
 
 </div>
 <div class="summary-row">
@@ -384,7 +391,7 @@ but not known in CLDR.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_territory/1"><code class="inline">Cldr.validate_territory/1</code></a>.</p></div>
+    <div class="summary-synopsis"><p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_territory/1"><code class="inline">Cldr.validate_territory/1</code></a>.</p></div>
 
 </div>
 
@@ -421,7 +428,7 @@ Functions
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#available_locale_name?/1"><code class="inline">Cldr.available_locale_name?/1</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#available_locale_name?/1"><code class="inline">Cldr.available_locale_name?/1</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="default_locale/0">
@@ -446,7 +453,7 @@ Functions
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>default_locale() :: <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+          <pre>default_locale() :: <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
 
       </div>
 
@@ -454,24 +461,24 @@ Functions
   <a href="#default_locale/0-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Example
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_locale</span><span class="p" data-group-id="7689581589-1">(</span><span class="p" data-group-id="7689581589-1">)</span><span class="w">
-</span><span class="p" data-group-id="7689581589-2">%</span><span class="nc" data-group-id="7689581589-2">Cldr.LanguageTag</span><span class="p" data-group-id="7689581589-2">{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_locale</span><span class="p" data-group-id="5052062229-1">(</span><span class="p" data-group-id="5052062229-1">)</span><span class="w">
+</span><span class="p" data-group-id="5052062229-2">%</span><span class="nc" data-group-id="5052062229-2">Cldr.LanguageTag</span><span class="p" data-group-id="5052062229-2">{</span><span class="w">
   </span><span class="ss">backend</span><span class="p">:</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="p">,</span><span class="w">
   </span><span class="ss">canonical_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-Latn-001&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">cldr_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-001&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">language_subtags</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7689581589-3">[</span><span class="p" data-group-id="7689581589-3">]</span><span class="p">,</span><span class="w">
-  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7689581589-4">%{</span><span class="p" data-group-id="7689581589-4">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">language_subtags</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5052062229-3">[</span><span class="p" data-group-id="5052062229-3">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5052062229-4">%{</span><span class="p" data-group-id="5052062229-4">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">gettext_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7689581589-5">%{</span><span class="p" data-group-id="7689581589-5">}</span><span class="p">,</span><span class="w">
-  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7689581589-6">[</span><span class="p" data-group-id="7689581589-6">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5052062229-5">%{</span><span class="p" data-group-id="5052062229-5">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5052062229-6">[</span><span class="p" data-group-id="5052062229-6">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">rbnf_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">requested_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-001&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Latn&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">territory</span><span class="p">:</span><span class="w"> </span><span class="ss">:&quot;001&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7689581589-7">%{</span><span class="p" data-group-id="7689581589-7">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5052062229-7">%{</span><span class="p" data-group-id="5052062229-7">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">language_variant</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="p" data-group-id="7689581589-2">}</span></code></pre>
+</span><span class="p" data-group-id="5052062229-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="default_territory/0">
@@ -496,7 +503,7 @@ Functions
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>default_territory() :: <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#t:territory/0">Cldr.territory</a>()</pre>
+          <pre>default_territory() :: <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#t:territory/0">Cldr.territory</a>()</pre>
 
       </div>
 
@@ -505,7 +512,7 @@ does not specify one and none can be inferred.</p><h2 id="default_territory/0-ex
   <a href="#default_territory/0-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Example
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_territory</span><span class="p" data-group-id="2020593766-1">(</span><span class="p" data-group-id="2020593766-1">)</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_territory</span><span class="p" data-group-id="7254646119-1">(</span><span class="p" data-group-id="7254646119-1">)</span><span class="w">
 </span><span class="ss">:&quot;001&quot;</span></code></pre>
   </section>
 </section>
@@ -543,15 +550,15 @@ does not specify one and none can be inferred.</p><h2 id="default_territory/0-ex
 </h2>
 <ul><li><p><code class="inline">string</code> is any <code class="inline">String.t</code> or a 2-element list
 of <code class="inline">String.t</code> between which the ellipsis is inserted.</p></li><li><p><code class="inline">backend</code> is any module that includes <code class="inline">use Cldr</code> and therefore
-is a <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> backend module.  The default is <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#default_backend!/0"><code class="inline">Cldr.default_backend!/0</code></a>.
-Note that <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#default_backend!/0"><code class="inline">Cldr.default_backend!/0</code></a> will raise an exception if
+is a <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a> backend module.  The default is <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#default_backend!/0"><code class="inline">Cldr.default_backend!/0</code></a>.
+Note that <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#default_backend!/0"><code class="inline">Cldr.default_backend!/0</code></a> will raise an exception if
 no <code class="inline">:default_backend</code> is configured under the <code class="inline">:ex_cldr</code> key in
 <code class="inline">config.exs</code>.</p></li><li><p><code class="inline">options</code> is a keyword list of options</p></li></ul><h2 id="ellipsis/2-options" class="section-heading">
   <a href="#ellipsis/2-options" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Options
 </h2>
-<ul><li><p><code class="inline">:locale</code> is any valid locale name returned by <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_locale_names/1"><code class="inline">Cldr.known_locale_names/1</code></a>.
-The default is <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#get_locale/0"><code class="inline">Cldr.get_locale/0</code></a>.</p></li><li><p><code class="inline">:location</code> determines where to place the ellipsis. The options are
+<ul><li><p><code class="inline">:locale</code> is any valid locale name returned by <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_locale_names/1"><code class="inline">Cldr.known_locale_names/1</code></a>.
+The default is <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#get_locale/0"><code class="inline">Cldr.get_locale/0</code></a>.</p></li><li><p><code class="inline">:location</code> determines where to place the ellipsis. The options are
 <code class="inline">:after</code> (the default for a single string argument), <code class="inline">:between</code>
 (the default and only valid location for an argument that is a list
 of two strings) and <code class="inline">:before</code>.</p></li><li><p><code class="inline">:format</code> formats based upon whether the ellipsis
@@ -560,16 +567,16 @@ is inserted between words or sentences. The valid options are
   <a href="#ellipsis/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">ellipsis</span><span class="w"> </span><span class="s">&quot;And furthermore&quot;</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">ellipsis</span><span class="w"> </span><span class="s">&quot;And furthermore&quot;</span><span class="w">
 </span><span class="s">&quot;And furthermore…&quot;</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">ellipsis</span><span class="w"> </span><span class="p" data-group-id="5002135154-1">[</span><span class="s">&quot;And furthermore&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;there is much to be done&quot;</span><span class="p" data-group-id="5002135154-1">]</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ja&quot;</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">ellipsis</span><span class="w"> </span><span class="p" data-group-id="8604523445-1">[</span><span class="s">&quot;And furthermore&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;there is much to be done&quot;</span><span class="p" data-group-id="8604523445-1">]</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ja&quot;</span><span class="w">
 </span><span class="s">&quot;And furthermore…there is much to be done&quot;</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">ellipsis</span><span class="w"> </span><span class="s">&quot;And furthermore&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:word</span><span class="w">
 </span><span class="s">&quot;And furthermore …&quot;</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">ellipsis</span><span class="w"> </span><span class="p" data-group-id="5002135154-2">[</span><span class="s">&quot;And furthermore&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;there is much to be done&quot;</span><span class="p" data-group-id="5002135154-2">]</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ja&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:word</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">ellipsis</span><span class="w"> </span><span class="p" data-group-id="8604523445-2">[</span><span class="s">&quot;And furthermore&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;there is much to be done&quot;</span><span class="p" data-group-id="8604523445-2">]</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ja&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:word</span><span class="w">
 </span><span class="s">&quot;And furthermore … there is much to be done&quot;</span></code></pre>
   </section>
 </section>
@@ -595,32 +602,32 @@ is inserted between words or sentences. The valid options are
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>get_locale() :: <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()</pre>
+          <pre>get_locale() :: <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()</pre>
 
       </div>
 
-<p>Return the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> functions that
+<p>Return the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a> functions that
 take an optional locale parameter for which a locale is not supplied.</p><h2 id="get_locale/0-example" class="section-heading">
   <a href="#get_locale/0-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Example
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">put_locale</span><span class="p" data-group-id="0335243636-1">(</span><span class="s">&quot;pl&quot;</span><span class="p" data-group-id="0335243636-1">)</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">put_locale</span><span class="p" data-group-id="3573347124-1">(</span><span class="s">&quot;pl&quot;</span><span class="p" data-group-id="3573347124-1">)</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">get_locale</span><span class="w">
-</span><span class="p" data-group-id="0335243636-2">%</span><span class="nc" data-group-id="0335243636-2">Cldr.LanguageTag</span><span class="p" data-group-id="0335243636-2">{</span><span class="w">
+</span><span class="p" data-group-id="3573347124-2">%</span><span class="nc" data-group-id="3573347124-2">Cldr.LanguageTag</span><span class="p" data-group-id="3573347124-2">{</span><span class="w">
    </span><span class="ss">backend</span><span class="p">:</span><span class="w"> </span><span class="nc">Elixir.CoreWeb.Cldr</span><span class="p">,</span><span class="w">
    </span><span class="ss">canonical_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pl-Latn-PL&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">cldr_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pl&quot;</span><span class="p">,</span><span class="w">
-   </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0335243636-3">%{</span><span class="p" data-group-id="0335243636-3">}</span><span class="p">,</span><span class="w">
+   </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3573347124-3">%{</span><span class="p" data-group-id="3573347124-3">}</span><span class="p">,</span><span class="w">
    </span><span class="ss">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pl&quot;</span><span class="p">,</span><span class="w">
-   </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0335243636-4">%{</span><span class="p" data-group-id="0335243636-4">}</span><span class="p">,</span><span class="w">
-   </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0335243636-5">[</span><span class="p" data-group-id="0335243636-5">]</span><span class="p">,</span><span class="w">
+   </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3573347124-4">%{</span><span class="p" data-group-id="3573347124-4">}</span><span class="p">,</span><span class="w">
+   </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3573347124-5">[</span><span class="p" data-group-id="3573347124-5">]</span><span class="p">,</span><span class="w">
    </span><span class="ss">rbnf_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pl&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">territory</span><span class="p">:</span><span class="w"> </span><span class="ss">:PL</span><span class="p">,</span><span class="w">
    </span><span class="ss">requested_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pl&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Latn&quot;</span><span class="p">,</span><span class="w">
-   </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0335243636-6">%{</span><span class="p" data-group-id="0335243636-6">}</span><span class="p">,</span><span class="w">
+   </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3573347124-6">%{</span><span class="p" data-group-id="3573347124-6">}</span><span class="p">,</span><span class="w">
    </span><span class="ss">language_variant</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
- </span><span class="p" data-group-id="0335243636-2">}</span></code></pre>
+ </span><span class="p" data-group-id="3573347124-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="known_calendars/0">
@@ -642,7 +649,7 @@ take an optional locale parameter for which a locale is not supplied.</p><h2 id=
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_calendars/0"><code class="inline">Cldr.known_calendars/0</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_calendars/0"><code class="inline">Cldr.known_calendars/0</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="known_currencies/0">
@@ -664,7 +671,7 @@ take an optional locale parameter for which a locale is not supplied.</p><h2 id=
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_currencies/0"><code class="inline">Cldr.known_currencies/0</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_currencies/0"><code class="inline">Cldr.known_currencies/0</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="known_gettext_locale_name/1">
@@ -689,7 +696,7 @@ take an optional locale parameter for which a locale is not supplied.</p><h2 id=
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_gettext_locale_name(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | false</pre>
+          <pre>known_gettext_locale_name(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | false</pre>
 
       </div>
 
@@ -704,7 +711,7 @@ take an optional locale parameter for which a locale is not supplied.</p><h2 id=
   <a href="#known_gettext_locale_name/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_gettext_locale_name</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_gettext_locale_name</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
 </span><span class="s">&quot;en&quot;</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_gettext_locale_name</span><span class="w"> </span><span class="s">&quot;en-SA&quot;</span><span class="w">
@@ -733,7 +740,7 @@ take an optional locale parameter for which a locale is not supplied.</p><h2 id=
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_gettext_locale_name?(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
+          <pre>known_gettext_locale_name?(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
 
       </div>
 
@@ -746,10 +753,10 @@ name is configured and available in Gettext.</p><h2 id="known_gettext_locale_nam
   <a href="#known_gettext_locale_name?/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_gettext_locale_name?</span><span class="p" data-group-id="1826716500-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="1826716500-1">)</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_gettext_locale_name?</span><span class="p" data-group-id="1110477980-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="1110477980-1">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_gettext_locale_name?</span><span class="p" data-group-id="1826716500-2">(</span><span class="s">&quot;!!&quot;</span><span class="p" data-group-id="1826716500-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_gettext_locale_name?</span><span class="p" data-group-id="1110477980-2">(</span><span class="s">&quot;!!&quot;</span><span class="p" data-group-id="1110477980-2">)</span><span class="w">
 </span><span class="no">false</span></code></pre>
   </section>
 </section>
@@ -775,13 +782,13 @@ name is configured and available in Gettext.</p><h2 id="known_gettext_locale_nam
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_gettext_locale_names() :: [<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()]</pre>
+          <pre>known_gettext_locale_names() :: [<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()]</pre>
 
       </div>
 
 <p>Returns a list of GetText locale names but in CLDR format with
 underscore replaced by hyphen in order to facilitate comparisons
-with <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> locale names.</p>
+with <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a> locale names.</p>
   </section>
 </section>
 <section class="detail" id="known_locale_name/1">
@@ -806,12 +813,12 @@ with <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_locale_name(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | false</pre>
+          <pre>known_locale_name(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | false</pre>
 
       </div>
 
 <p>Returns either the <code class="inline">locale_name</code> or <code class="inline">false</code> based upon
-whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a>.</p><p>This is helpful when building a list of <code class="inline">or</code> expressions
+whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a>.</p><p>This is helpful when building a list of <code class="inline">or</code> expressions
 to return the first known locale name from a list.</p><h2 id="known_locale_name/1-arguments" class="section-heading">
   <a href="#known_locale_name/1-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Arguments
@@ -820,7 +827,7 @@ to return the first known locale name from a list.</p><h2 id="known_locale_name/
   <a href="#known_locale_name/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_locale_name</span><span class="w"> </span><span class="s">&quot;en-AU&quot;</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_locale_name</span><span class="w"> </span><span class="s">&quot;en-AU&quot;</span><span class="w">
 </span><span class="s">&quot;en-AU&quot;</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_locale_name</span><span class="w"> </span><span class="s">&quot;en-SA&quot;</span><span class="w">
@@ -849,7 +856,7 @@ to return the first known locale name from a list.</p><h2 id="known_locale_name/
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_locale_name?(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
+          <pre>known_locale_name?(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
 
       </div>
 
@@ -862,10 +869,10 @@ name is configured and available in Cldr.</p><h2 id="known_locale_name?/1-argume
   <a href="#known_locale_name?/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_locale_name?</span><span class="p" data-group-id="1633035812-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="1633035812-1">)</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_locale_name?</span><span class="p" data-group-id="5159873499-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="5159873499-1">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_locale_name?</span><span class="p" data-group-id="1633035812-2">(</span><span class="s">&quot;!!&quot;</span><span class="p" data-group-id="1633035812-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_locale_name?</span><span class="p" data-group-id="5159873499-2">(</span><span class="s">&quot;!!&quot;</span><span class="p" data-group-id="5159873499-2">)</span><span class="w">
 </span><span class="no">false</span></code></pre>
   </section>
 </section>
@@ -913,12 +920,12 @@ in this module or in <a href="https://hexdocs.pm/gettext/0.18.2/Gettext.html"><c
 
   <section class="docstring">
 
-<p>Returns a list of atoms representing the number systems types known to <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a>.</p><h2 id="known_number_system_types/0-example" class="section-heading">
+<p>Returns a list of atoms representing the number systems types known to <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a>.</p><h2 id="known_number_system_types/0-example" class="section-heading">
   <a href="#known_number_system_types/0-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Example
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_number_system_types</span><span class="w">
-</span><span class="p" data-group-id="7868566463-1">[</span><span class="ss">:default</span><span class="p">,</span><span class="w"> </span><span class="ss">:finance</span><span class="p">,</span><span class="w"> </span><span class="ss">:native</span><span class="p">,</span><span class="w"> </span><span class="ss">:traditional</span><span class="p" data-group-id="7868566463-1">]</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_number_system_types</span><span class="w">
+</span><span class="p" data-group-id="8562932331-1">[</span><span class="ss">:default</span><span class="p">,</span><span class="w"> </span><span class="ss">:finance</span><span class="p">,</span><span class="w"> </span><span class="ss">:native</span><span class="p">,</span><span class="w"> </span><span class="ss">:traditional</span><span class="p" data-group-id="8562932331-1">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="known_number_systems/0">
@@ -940,7 +947,7 @@ in this module or in <a href="https://hexdocs.pm/gettext/0.18.2/Gettext.html"><c
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_number_systems/0"><code class="inline">Cldr.known_number_systems/0</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_number_systems/0"><code class="inline">Cldr.known_number_systems/0</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="known_rbnf_locale_name/1">
@@ -965,12 +972,12 @@ in this module or in <a href="https://hexdocs.pm/gettext/0.18.2/Gettext.html"><c
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_rbnf_locale_name(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | false</pre>
+          <pre>known_rbnf_locale_name(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | false</pre>
 
       </div>
 
 <p>Returns either the RBNF <code class="inline">locale_name</code> or <code class="inline">false</code> based upon
-whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a>
+whether the locale name is configured in <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a>
 and has RBNF rules defined.</p><h2 id="known_rbnf_locale_name/1-arguments" class="section-heading">
   <a href="#known_rbnf_locale_name/1-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Arguments
@@ -979,7 +986,7 @@ and has RBNF rules defined.</p><h2 id="known_rbnf_locale_name/1-arguments" class
   <a href="#known_rbnf_locale_name/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_rbnf_locale_name</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_rbnf_locale_name</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
 </span><span class="s">&quot;en&quot;</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_rbnf_locale_name</span><span class="w"> </span><span class="s">&quot;en-SA&quot;</span><span class="w">
@@ -1008,7 +1015,7 @@ and has RBNF rules defined.</p><h2 id="known_rbnf_locale_name/1-arguments" class
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_rbnf_locale_name?(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
+          <pre>known_rbnf_locale_name?(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
 
       </div>
 
@@ -1022,10 +1029,10 @@ rules based number formats (RBNF).</p><h2 id="known_rbnf_locale_name?/1-argument
   <a href="#known_rbnf_locale_name?/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_rbnf_locale_name?</span><span class="p" data-group-id="9679810336-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="9679810336-1">)</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_rbnf_locale_name?</span><span class="p" data-group-id="7124691139-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="7124691139-1">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_rbnf_locale_name?</span><span class="p" data-group-id="9679810336-2">(</span><span class="s">&quot;!!&quot;</span><span class="p" data-group-id="9679810336-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">known_rbnf_locale_name?</span><span class="p" data-group-id="7124691139-2">(</span><span class="s">&quot;!!&quot;</span><span class="p" data-group-id="7124691139-2">)</span><span class="w">
 </span><span class="no">false</span></code></pre>
   </section>
 </section>
@@ -1051,7 +1058,7 @@ rules based number formats (RBNF).</p><h2 id="known_rbnf_locale_name?/1-argument
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>known_rbnf_locale_names() :: [<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()]</pre>
+          <pre>known_rbnf_locale_names() :: [<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()]</pre>
 
       </div>
 
@@ -1078,7 +1085,7 @@ formats (RBNF).</p>
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_territories/0"><code class="inline">Cldr.known_territories/0</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_territories/0"><code class="inline">Cldr.known_territories/0</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="normalize_lenient_parse/3">
@@ -1128,47 +1135,47 @@ of common symbols in numbers, currencies and dates</p>
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>put_locale(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>() | <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()) ::
-  {:ok, <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()} | {:error, {<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}}</pre>
+          <pre>put_locale(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>() | <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()} | {:error, {<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}}</pre>
 
       </div>
 
-<p>Set the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html"><code class="inline">Cldr</code></a> functions that
+<p>Set the current locale to be used for <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html"><code class="inline">Cldr</code></a> functions that
 take an optional locale parameter for which a locale is not supplied.</p><h2 id="put_locale/1-arguments" class="section-heading">
   <a href="#put_locale/1-arguments" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Arguments
 </h2>
 <ul><li><code class="inline">locale</code> is any valid locale name returned by <a href="#known_locale_names/0"><code class="inline">CoreWeb.Cldr.known_locale_names/0</code></a>
-or a <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html"><code class="inline">Cldr.LanguageTag</code></a> struct returned by <a href="CoreWeb.Cldr.Locale.html#new!/1"><code class="inline">CoreWeb.Cldr.Locale.new!/1</code></a></li></ul><p>See <a href="https://tools.ietf.org/html/rfc5646">rfc5646</a> for the specification
+or a <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html"><code class="inline">Cldr.LanguageTag</code></a> struct returned by <a href="CoreWeb.Cldr.Locale.html#new!/1"><code class="inline">CoreWeb.Cldr.Locale.new!/1</code></a></li></ul><p>See <a href="https://tools.ietf.org/html/rfc5646">rfc5646</a> for the specification
 of a language tag and consult <code class="inline">Cldr.Rfc5646.Parser</code> for the
 specification as implemented that includes the CLDR extensions for
 &quot;u&quot; (locales) and &quot;t&quot; (transforms).</p><h2 id="put_locale/1-examples" class="section-heading">
   <a href="#put_locale/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">put_locale</span><span class="p" data-group-id="3265491034-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="3265491034-1">)</span><span class="w">
-</span><span class="p" data-group-id="3265491034-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="3265491034-3">%</span><span class="nc" data-group-id="3265491034-3">Cldr.LanguageTag</span><span class="p" data-group-id="3265491034-3">{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">put_locale</span><span class="p" data-group-id="4431904852-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="4431904852-1">)</span><span class="w">
+</span><span class="p" data-group-id="4431904852-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="4431904852-3">%</span><span class="nc" data-group-id="4431904852-3">Cldr.LanguageTag</span><span class="p" data-group-id="4431904852-3">{</span><span class="w">
    </span><span class="ss">backend</span><span class="p">:</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="p">,</span><span class="w">
    </span><span class="ss">canonical_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-Latn-US&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">cldr_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-   </span><span class="ss">language_subtags</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3265491034-4">[</span><span class="p" data-group-id="3265491034-4">]</span><span class="p">,</span><span class="w">
-   </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3265491034-5">%{</span><span class="p" data-group-id="3265491034-5">}</span><span class="p">,</span><span class="w">
+   </span><span class="ss">language_subtags</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4431904852-4">[</span><span class="p" data-group-id="4431904852-4">]</span><span class="p">,</span><span class="w">
+   </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4431904852-5">%{</span><span class="p" data-group-id="4431904852-5">}</span><span class="p">,</span><span class="w">
    </span><span class="ss">gettext_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-   </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3265491034-6">%{</span><span class="p" data-group-id="3265491034-6">}</span><span class="p">,</span><span class="w">
-   </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3265491034-7">[</span><span class="p" data-group-id="3265491034-7">]</span><span class="p">,</span><span class="w">
+   </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4431904852-6">%{</span><span class="p" data-group-id="4431904852-6">}</span><span class="p">,</span><span class="w">
+   </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4431904852-7">[</span><span class="p" data-group-id="4431904852-7">]</span><span class="p">,</span><span class="w">
    </span><span class="ss">rbnf_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">requested_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Latn&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">territory</span><span class="p">:</span><span class="w"> </span><span class="ss">:US</span><span class="p">,</span><span class="w">
-   </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3265491034-8">%{</span><span class="p" data-group-id="3265491034-8">}</span><span class="p">,</span><span class="w">
+   </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4431904852-8">%{</span><span class="p" data-group-id="4431904852-8">}</span><span class="p">,</span><span class="w">
    </span><span class="ss">language_variant</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
- </span><span class="p" data-group-id="3265491034-3">}</span><span class="p" data-group-id="3265491034-2">}</span><span class="w">
+ </span><span class="p" data-group-id="4431904852-3">}</span><span class="p" data-group-id="4431904852-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">put_locale</span><span class="p" data-group-id="3265491034-9">(</span><span class="s">&quot;invalid-locale!&quot;</span><span class="p" data-group-id="3265491034-9">)</span><span class="w">
-</span><span class="p" data-group-id="3265491034-10">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3265491034-11">{</span><span class="nc">Cldr.LanguageTag.ParseError</span><span class="p">,</span><span class="w">
-  </span><span class="s">&quot;Expected a BCP47 language tag. Could not parse the remaining </span><span class="se">\&quot;</span><span class="s">!</span><span class="se">\&quot;</span><span class="s"> starting at position 15&quot;</span><span class="p" data-group-id="3265491034-11">}</span><span class="p" data-group-id="3265491034-10">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">put_locale</span><span class="p" data-group-id="4431904852-9">(</span><span class="s">&quot;invalid-locale!&quot;</span><span class="p" data-group-id="4431904852-9">)</span><span class="w">
+</span><span class="p" data-group-id="4431904852-10">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4431904852-11">{</span><span class="nc">Cldr.LanguageTag.ParseError</span><span class="p">,</span><span class="w">
+  </span><span class="s">&quot;Expected a BCP47 language tag. Could not parse the remaining </span><span class="se">\&quot;</span><span class="s">!</span><span class="se">\&quot;</span><span class="s"> starting at position 15&quot;</span><span class="p" data-group-id="4431904852-11">}</span><span class="p" data-group-id="4431904852-10">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="quote/2">
@@ -1207,12 +1214,12 @@ specification as implemented that includes the CLDR extensions for
   <a href="#quote/2-options" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Options
 </h2>
-<ul><li><code class="inline">locale</code> is any valid locale name returned by <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_locale_names/1"><code class="inline">Cldr.known_locale_names/1</code></a>.
-The default is <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#get_locale/0"><code class="inline">Cldr.get_locale/0</code></a></li></ul><h2 id="quote/2-examples" class="section-heading">
+<ul><li><code class="inline">locale</code> is any valid locale name returned by <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_locale_names/1"><code class="inline">Cldr.known_locale_names/1</code></a>.
+The default is <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#get_locale/0"><code class="inline">Cldr.get_locale/0</code></a></li></ul><h2 id="quote/2-examples" class="section-heading">
   <a href="#quote/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="k">quote</span><span class="w"> </span><span class="s">&quot;Quoted String&quot;</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="k">quote</span><span class="w"> </span><span class="s">&quot;Quoted String&quot;</span><span class="w">
 </span><span class="s">&quot;“Quoted String”&quot;</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="k">quote</span><span class="w"> </span><span class="s">&quot;Quoted String&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ja&quot;</span><span class="w">
@@ -1241,7 +1248,7 @@ The default is <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#get_locale/0
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>unknown_locale_names() :: [<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()]</pre>
+          <pre>unknown_locale_names() :: [<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>()]</pre>
 
       </div>
 
@@ -1270,7 +1277,7 @@ return an empty list.</p>
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_calendar/1"><code class="inline">Cldr.validate_calendar/1</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_calendar/1"><code class="inline">Cldr.validate_calendar/1</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="validate_currency/1">
@@ -1292,7 +1299,7 @@ return an empty list.</p>
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_currency/1"><code class="inline">Cldr.validate_currency/1</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_currency/1"><code class="inline">Cldr.validate_currency/1</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="validate_locale/1">
@@ -1317,8 +1324,8 @@ return an empty list.</p>
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>validate_locale(<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>() | <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()) ::
-  {:ok, <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()} | {:error, {<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}}</pre>
+          <pre>validate_locale(<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.Locale.html#t:locale_name/0">Cldr.Locale.locale_name</a>() | <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html#t:t/0">Cldr.LanguageTag.t</a>()} | {:error, {<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}}</pre>
 
       </div>
 
@@ -1327,7 +1334,7 @@ return an empty list.</p>
   Arguments
 </h2>
 <ul><li><code class="inline">locale</code> is any valid locale name returned by <a href="#known_locale_names/0"><code class="inline">CoreWeb.Cldr.known_locale_names/0</code></a>
-or a <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.LanguageTag.html"><code class="inline">Cldr.LanguageTag</code></a> struct returned by <a href="CoreWeb.Cldr.Locale.html#new!/1"><code class="inline">CoreWeb.Cldr.Locale.new!/1</code></a></li></ul><h2 id="validate_locale/1-returns" class="section-heading">
+or a <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html"><code class="inline">Cldr.LanguageTag</code></a> struct returned by <a href="CoreWeb.Cldr.Locale.html#new!/1"><code class="inline">CoreWeb.Cldr.Locale.new!/1</code></a></li></ul><h2 id="validate_locale/1-returns" class="section-heading">
   <a href="#validate_locale/1-returns" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Returns
 </h2>
@@ -1342,47 +1349,47 @@ specification as implemented that includes the CLDR extensions for
   <a href="#validate_locale/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="0963783863-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="0963783863-1">)</span><span class="w">
-</span><span class="p" data-group-id="0963783863-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="0963783863-3">%</span><span class="nc" data-group-id="0963783863-3">Cldr.LanguageTag</span><span class="p" data-group-id="0963783863-3">{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="3622266732-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="3622266732-1">)</span><span class="w">
+</span><span class="p" data-group-id="3622266732-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="3622266732-3">%</span><span class="nc" data-group-id="3622266732-3">Cldr.LanguageTag</span><span class="p" data-group-id="3622266732-3">{</span><span class="w">
   </span><span class="ss">backend</span><span class="p">:</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="p">,</span><span class="w">
   </span><span class="ss">canonical_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-Latn-US&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">cldr_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-4">%{</span><span class="p" data-group-id="0963783863-4">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-4">%{</span><span class="p" data-group-id="3622266732-4">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">gettext_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-5">%{</span><span class="p" data-group-id="0963783863-5">}</span><span class="p">,</span><span class="w">
-  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-6">[</span><span class="p" data-group-id="0963783863-6">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-5">%{</span><span class="p" data-group-id="3622266732-5">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-6">[</span><span class="p" data-group-id="3622266732-6">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">rbnf_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">requested_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Latn&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">territory</span><span class="p">:</span><span class="w"> </span><span class="ss">:US</span><span class="p">,</span><span class="w">
-  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-7">%{</span><span class="p" data-group-id="0963783863-7">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-7">%{</span><span class="p" data-group-id="3622266732-7">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">language_variant</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="p" data-group-id="0963783863-3">}</span><span class="p" data-group-id="0963783863-2">}</span><span class="w">
+</span><span class="p" data-group-id="3622266732-3">}</span><span class="p" data-group-id="3622266732-2">}</span><span class="w">
 
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_locale</span><span class="p" data-group-id="0963783863-8">(</span><span class="p" data-group-id="0963783863-8">)</span><span class="w">
-</span><span class="p" data-group-id="0963783863-9">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="0963783863-10">%</span><span class="nc" data-group-id="0963783863-10">Cldr.LanguageTag</span><span class="p" data-group-id="0963783863-10">{</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_locale</span><span class="p" data-group-id="3622266732-8">(</span><span class="p" data-group-id="3622266732-8">)</span><span class="w">
+</span><span class="p" data-group-id="3622266732-9">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="3622266732-10">%</span><span class="nc" data-group-id="3622266732-10">Cldr.LanguageTag</span><span class="p" data-group-id="3622266732-10">{</span><span class="w">
   </span><span class="ss">backend</span><span class="p">:</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="p">,</span><span class="w">
   </span><span class="ss">canonical_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-Latn-001&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">cldr_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-001&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-11">%{</span><span class="p" data-group-id="0963783863-11">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-11">%{</span><span class="p" data-group-id="3622266732-11">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">gettext_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-12">%{</span><span class="p" data-group-id="0963783863-12">}</span><span class="p">,</span><span class="w">
-  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-13">[</span><span class="p" data-group-id="0963783863-13">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-12">%{</span><span class="p" data-group-id="3622266732-12">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-13">[</span><span class="p" data-group-id="3622266732-13">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">rbnf_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">requested_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-001&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Latn&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">territory</span><span class="p">:</span><span class="w"> </span><span class="ss">:&quot;001&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0963783863-14">%{</span><span class="p" data-group-id="0963783863-14">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3622266732-14">%{</span><span class="p" data-group-id="3622266732-14">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">language_variant</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="p" data-group-id="0963783863-10">}</span><span class="p" data-group-id="0963783863-9">}</span><span class="w">
+</span><span class="p" data-group-id="3622266732-10">}</span><span class="p" data-group-id="3622266732-9">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="0963783863-15">(</span><span class="s">&quot;zzz&quot;</span><span class="p" data-group-id="0963783863-15">)</span><span class="w">
-</span><span class="p" data-group-id="0963783863-16">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0963783863-17">{</span><span class="nc">Cldr.UnknownLocaleError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The locale </span><span class="se">\&quot;</span><span class="s">zzz</span><span class="se">\&quot;</span><span class="s"> is not known.&quot;</span><span class="p" data-group-id="0963783863-17">}</span><span class="p" data-group-id="0963783863-16">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="3622266732-15">(</span><span class="s">&quot;zzz&quot;</span><span class="p" data-group-id="3622266732-15">)</span><span class="w">
+</span><span class="p" data-group-id="3622266732-16">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3622266732-17">{</span><span class="nc">Cldr.UnknownLocaleError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The locale </span><span class="se">\&quot;</span><span class="s">zzz</span><span class="se">\&quot;</span><span class="s"> is not known.&quot;</span><span class="p" data-group-id="3622266732-17">}</span><span class="p" data-group-id="3622266732-16">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="validate_number_system/1">
@@ -1404,7 +1411,7 @@ specification as implemented that includes the CLDR extensions for
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_number_system/1"><code class="inline">Cldr.validate_number_system/1</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_number_system/1"><code class="inline">Cldr.validate_number_system/1</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="validate_number_system_type/1">
@@ -1439,7 +1446,7 @@ specification as implemented that includes the CLDR extensions for
   Arguments
 </h2>
 <ul><li><code class="inline">number_system_type</code> is any number system type returned by
-<a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#known_number_system_types/1"><code class="inline">Cldr.known_number_system_types/1</code></a></li></ul><h2 id="validate_number_system_type/1-returns" class="section-heading">
+<a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_number_system_types/1"><code class="inline">Cldr.known_number_system_types/1</code></a></li></ul><h2 id="validate_number_system_type/1-returns" class="section-heading">
   <a href="#validate_number_system_type/1-returns" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Returns
 </h2>
@@ -1447,23 +1454,23 @@ specification as implemented that includes the CLDR extensions for
   <a href="#validate_number_system_type/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_number_system_type</span><span class="w"> </span><span class="ss">:default</span><span class="w">
-</span><span class="p" data-group-id="6940959336-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:default</span><span class="p" data-group-id="6940959336-1">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_number_system_type</span><span class="w"> </span><span class="ss">:default</span><span class="w">
+</span><span class="p" data-group-id="7592656164-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:default</span><span class="p" data-group-id="7592656164-1">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_number_system_type</span><span class="w"> </span><span class="ss">:traditional</span><span class="w">
-</span><span class="p" data-group-id="6940959336-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:traditional</span><span class="p" data-group-id="6940959336-2">}</span><span class="w">
+</span><span class="p" data-group-id="7592656164-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:traditional</span><span class="p" data-group-id="7592656164-2">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_number_system_type</span><span class="w"> </span><span class="ss">:latn</span><span class="w">
-</span><span class="p" data-group-id="6940959336-3">{</span><span class="w">
+</span><span class="p" data-group-id="7592656164-3">{</span><span class="w">
   </span><span class="ss">:error</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="6940959336-4">{</span><span class="nc">Cldr.UnknownNumberSystemTypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The number system type :latn is unknown&quot;</span><span class="p" data-group-id="6940959336-4">}</span><span class="w">
-</span><span class="p" data-group-id="6940959336-3">}</span><span class="w">
+  </span><span class="p" data-group-id="7592656164-4">{</span><span class="nc">Cldr.UnknownNumberSystemTypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The number system type :latn is unknown&quot;</span><span class="p" data-group-id="7592656164-4">}</span><span class="w">
+</span><span class="p" data-group-id="7592656164-3">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_number_system_type</span><span class="w"> </span><span class="s">&quot;bork&quot;</span><span class="w">
-</span><span class="p" data-group-id="6940959336-5">{</span><span class="w">
+</span><span class="p" data-group-id="7592656164-5">{</span><span class="w">
   </span><span class="ss">:error</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="6940959336-6">{</span><span class="nc">Cldr.UnknownNumberSystemTypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The number system type </span><span class="se">\&quot;</span><span class="s">bork</span><span class="se">\&quot;</span><span class="s"> is invalid&quot;</span><span class="p" data-group-id="6940959336-6">}</span><span class="w">
-</span><span class="p" data-group-id="6940959336-5">}</span></code></pre>
+  </span><span class="p" data-group-id="7592656164-6">{</span><span class="nc">Cldr.UnknownNumberSystemTypeError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The number system type </span><span class="se">\&quot;</span><span class="s">bork</span><span class="se">\&quot;</span><span class="s"> is invalid&quot;</span><span class="p" data-group-id="7592656164-6">}</span><span class="w">
+</span><span class="p" data-group-id="7592656164-5">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="validate_territory/1">
@@ -1485,7 +1492,7 @@ specification as implemented that includes the CLDR extensions for
 
   <section class="docstring">
 
-<p>See <a href="https://hexdocs.pm/ex_cldr/2.19.0/Cldr.html#validate_territory/1"><code class="inline">Cldr.validate_territory/1</code></a>.</p>
+<p>See <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#validate_territory/1"><code class="inline">Cldr.validate_territory/1</code></a>.</p>
   </section>
 </section>
 
@@ -1496,7 +1503,7 @@ specification as implemented that includes the CLDR extensions for
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.23.0) for the
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.24.2) for the
             <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
           </span>
           <span class="line">
