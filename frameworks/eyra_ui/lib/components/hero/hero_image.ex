@@ -7,7 +7,7 @@ defmodule EyraUI.Hero.HeroImage do
   alias EyraUI.Spacing
   alias EyraUI.Text.{Title0, Title4}
 
-  slot(call_to_action, required: true)
+  slot(call_to_action)
 
   prop(title, :string, required: true)
   prop(subtitle, :string, required: true)

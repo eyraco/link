@@ -34,6 +34,7 @@ defmodule EyraUI.Card.Card do
       <slot name="image" />
       <div class="p-6 lg:pl-8 lg:pr-8 lg:pt-10 lg:pb-10">
         <slot name="title" />
+        <div class="mt-6 lg:mt-8" />
         <slot />
       </div>
     </div>

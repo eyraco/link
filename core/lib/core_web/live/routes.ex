@@ -5,11 +5,13 @@ defmodule CoreWeb.Live.Routes do
       require CoreWeb.Live.SurveyTool.Routes
       require CoreWeb.Live.DataUploader.Routes
       require CoreWeb.Live.User.Routes
+      require CoreWeb.Live.Home.Routes
 
       CoreWeb.Live.Study.Routes.routes()
       CoreWeb.Live.SurveyTool.Routes.routes()
       CoreWeb.Live.DataUploader.Routes.routes()
       CoreWeb.Live.User.Routes.routes()
+      CoreWeb.Live.Home.Routes.routes()
 
       scope "/", CoreWeb do
         pipe_through(:browser)
