@@ -10,7 +10,7 @@
     <title>API Reference — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-e1cbd326e6.js"></script>
+    <script src="dist/sidebar_items-2479848f3e.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -255,6 +255,13 @@ device.</p></div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="Core.DataUploader.ClientScript.html">Core.DataUploader.ClientScript</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.DataUploader.UserData.html">Core.DataUploader.UserData</a>
 
   </div>
 
@@ -876,14 +883,30 @@ and use that information to produce a localized format.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="CoreWeb.DataLoaderController.html">CoreWeb.DataLoaderController</a>
+    <a href="CoreWeb.DataLoaderView.html">CoreWeb.DataLoaderView</a>
 
   </div>
 
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="CoreWeb.DataLoaderView.html">CoreWeb.DataLoaderView</a>
+    <a href="CoreWeb.DataUploader.Uploader.html">CoreWeb.DataUploader.Uploader</a>
+
+  </div>
+
+    <div class="summary-synopsis"><h2 id="properties" class="section-heading">
+  <a href="#properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Properties
+</h2>
+<ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live view.</li><li><strong>session</strong> <em>:map</em> - The request info necessary for the view, such as params, cookie session info, etc.
+The session is signed and stored on the client, then provided back to the server
+when the client connects, or reconnects to the stateful view.
+.</li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.DataUploader.Uploader.UploadChangeset.html">CoreWeb.DataUploader.Uploader.UploadChangeset</a>
 
   </div>
 
@@ -894,8 +917,8 @@ and use that information to produce a localized format.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties" class="section-heading">
-  <a href="#properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-1" class="section-heading">
+  <a href="#properties-1" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>devices</strong> <em>:any, required: true</em></li><li><strong>label</strong> <em>:string, required: true</em></li></ul></div>
@@ -971,8 +994,8 @@ and use that information to produce a localized format.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-1" class="section-heading">
-  <a href="#properties-1" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-2" class="section-heading">
+  <a href="#properties-2" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
@@ -1078,8 +1101,8 @@ framework.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-2" class="section-heading">
-  <a href="#properties-2" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-3" class="section-heading">
+  <a href="#properties-3" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live view.</li><li><strong>session</strong> <em>:map</em> - The request info necessary for the view, such as params, cookie session info, etc.
