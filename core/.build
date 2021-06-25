@@ -135,6 +135,7 @@ CoreWeb.SurveyTool.New.html
 CoreWeb.SurveyToolTaskView.html
 CoreWeb.SurveyToolView.html
 CoreWeb.Telemetry.html
+CoreWeb.UploadedFileController.html
 CoreWeb.User.AwaitConfirmation.html
 CoreWeb.User.ConfirmToken.html
 CoreWeb.User.Profile.html
@@ -174,8 +175,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-febecb507d.js
-dist/sidebar_items-2479848f3e.js
+dist/search_items-a8cb52db4c.js
+dist/sidebar_items-608ebf4a27.js
 index.html
 readme.html
 search.html
