@@ -10,7 +10,7 @@
     <title>Core.Studies — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-608ebf4a27.js"></script>
+    <script src="dist/sidebar_items-4049514dcf.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -185,6 +185,15 @@ Core.Studies <small class="app-vsn">(core v0.1.0)</small>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#list_data_donation_subject_studies/2">list_data_donation_subject_studies(user, opts \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Returns the list of studies where the user is a data donation subject.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#list_owned_studies/2">list_owned_studies(user, opts \\ [])</a>
 
   </div>
@@ -210,6 +219,13 @@ Core.Studies <small class="app-vsn">(core v0.1.0)</small>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#list_studies_with_published_promotion/2">list_studies_with_published_promotion(tool_entity, opts \\ [])</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#list_studies_with_published_survey/1">list_studies_with_published_survey(opts \\ [])</a>
 
   </div>
@@ -227,6 +243,13 @@ Core.Studies <small class="app-vsn">(core v0.1.0)</small>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#list_survey_tools/1">list_survey_tools(study)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_tools/2">list_tools(study, schema)</a>
 
   </div>
 
@@ -271,7 +294,7 @@ Functions
     </a>
     <h1 class="signature">add_author(study, researcher)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L230" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L274" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -293,7 +316,7 @@ Functions
     </a>
     <h1 class="signature">add_owner!(study, user)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L131" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L175" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -315,7 +338,7 @@ Functions
     </a>
     <h1 class="signature">assign_owners(study, users)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L104" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L148" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -339,7 +362,7 @@ Functions
     </a>
     <h1 class="signature">change_study(study, attrs \\ %{})</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L226" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L270" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -353,8 +376,8 @@ Functions
   <a href="#change_study/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_study</span><span class="p" data-group-id="2538927747-1">(</span><span class="n">study</span><span class="p" data-group-id="2538927747-1">)</span><span class="w">
-</span><span class="p" data-group-id="2538927747-2">%</span><span class="nc" data-group-id="2538927747-2">Ecto.Changeset</span><span class="p" data-group-id="2538927747-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2538927747-3">%</span><span class="nc" data-group-id="2538927747-3">Study</span><span class="p" data-group-id="2538927747-3">{</span><span class="p" data-group-id="2538927747-3">}</span><span class="p" data-group-id="2538927747-2">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_study</span><span class="p" data-group-id="6736661923-1">(</span><span class="n">study</span><span class="p" data-group-id="6736661923-1">)</span><span class="w">
+</span><span class="p" data-group-id="6736661923-2">%</span><span class="nc" data-group-id="6736661923-2">Ecto.Changeset</span><span class="p" data-group-id="6736661923-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6736661923-3">%</span><span class="nc" data-group-id="6736661923-3">Study</span><span class="p" data-group-id="6736661923-3">{</span><span class="p" data-group-id="6736661923-3">}</span><span class="p" data-group-id="6736661923-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="create_study/2">
@@ -366,7 +389,7 @@ Functions
     </a>
     <h1 class="signature">create_study(changeset, researcher)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L161" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L205" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -388,7 +411,7 @@ Functions
     </a>
     <h1 class="signature">delete_study(study)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L212" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L256" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -402,11 +425,11 @@ Functions
   <a href="#delete_study/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_study</span><span class="p" data-group-id="8610787287-1">(</span><span class="n">study</span><span class="p" data-group-id="8610787287-1">)</span><span class="w">
-</span><span class="p" data-group-id="8610787287-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8610787287-3">%</span><span class="nc" data-group-id="8610787287-3">Study</span><span class="p" data-group-id="8610787287-3">{</span><span class="p" data-group-id="8610787287-3">}</span><span class="p" data-group-id="8610787287-2">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_study</span><span class="p" data-group-id="9445799624-1">(</span><span class="n">study</span><span class="p" data-group-id="9445799624-1">)</span><span class="w">
+</span><span class="p" data-group-id="9445799624-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9445799624-3">%</span><span class="nc" data-group-id="9445799624-3">Study</span><span class="p" data-group-id="9445799624-3">{</span><span class="p" data-group-id="9445799624-3">}</span><span class="p" data-group-id="9445799624-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_study</span><span class="p" data-group-id="8610787287-4">(</span><span class="n">study</span><span class="p" data-group-id="8610787287-4">)</span><span class="w">
-</span><span class="p" data-group-id="8610787287-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8610787287-6">%</span><span class="nc" data-group-id="8610787287-6">Ecto.Changeset</span><span class="p" data-group-id="8610787287-6">{</span><span class="p" data-group-id="8610787287-6">}</span><span class="p" data-group-id="8610787287-5">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_study</span><span class="p" data-group-id="9445799624-4">(</span><span class="n">study</span><span class="p" data-group-id="9445799624-4">)</span><span class="w">
+</span><span class="p" data-group-id="9445799624-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9445799624-6">%</span><span class="nc" data-group-id="9445799624-6">Ecto.Changeset</span><span class="p" data-group-id="9445799624-6">{</span><span class="p" data-group-id="9445799624-6">}</span><span class="p" data-group-id="9445799624-5">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_study!/1">
@@ -418,7 +441,7 @@ Functions
     </a>
     <h1 class="signature">get_study!(id)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L149" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L193" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -432,10 +455,10 @@ Functions
   <a href="#get_study!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_study!</span><span class="p" data-group-id="5314598787-1">(</span><span class="mi">123</span><span class="p" data-group-id="5314598787-1">)</span><span class="w">
-</span><span class="p" data-group-id="5314598787-2">%</span><span class="nc" data-group-id="5314598787-2">Study</span><span class="p" data-group-id="5314598787-2">{</span><span class="p" data-group-id="5314598787-2">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_study!</span><span class="p" data-group-id="6635075104-1">(</span><span class="mi">123</span><span class="p" data-group-id="6635075104-1">)</span><span class="w">
+</span><span class="p" data-group-id="6635075104-2">%</span><span class="nc" data-group-id="6635075104-2">Study</span><span class="p" data-group-id="6635075104-2">{</span><span class="p" data-group-id="6635075104-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">get_study!</span><span class="p" data-group-id="5314598787-3">(</span><span class="mi">456</span><span class="p" data-group-id="5314598787-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_study!</span><span class="p" data-group-id="6635075104-3">(</span><span class="mi">456</span><span class="p" data-group-id="6635075104-3">)</span><span class="w">
 </span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
   </section>
 </section>
@@ -450,7 +473,7 @@ Functions
     </a>
     <h1 class="signature">get_study_changeset(attrs \\ %{})</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L153" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L197" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -472,7 +495,7 @@ Functions
     </a>
     <h1 class="signature">list_authors(study)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L239" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L283" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -483,6 +506,30 @@ Functions
   <section class="docstring">
 
 
+  </section>
+</section>
+<section class="detail" id="list_data_donation_subject_studies/2">
+
+    <span id="list_data_donation_subject_studies/1"></span>
+
+  <div class="detail-header">
+    <a href="#list_data_donation_subject_studies/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_data_donation_subject_studies(user, opts \\ [])</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L117" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Returns the list of studies where the user is a data donation subject.</p>
   </section>
 </section>
 <section class="detail" id="list_owned_studies/2">
@@ -496,7 +543,7 @@ Functions
     </a>
     <h1 class="signature">list_owned_studies(user, opts \\ [])</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L55" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L77" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -518,7 +565,7 @@ Functions
     </a>
     <h1 class="signature">list_owners(study)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L92" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L136" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -542,7 +589,7 @@ Functions
     </a>
     <h1 class="signature">list_studies(opts \\ [])</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L27" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L29" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -556,8 +603,32 @@ Functions
   <a href="#list_studies/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_studies</span><span class="p" data-group-id="6731552397-1">(</span><span class="p" data-group-id="6731552397-1">)</span><span class="w">
-</span><span class="p" data-group-id="6731552397-2">[</span><span class="p" data-group-id="6731552397-3">%</span><span class="nc" data-group-id="6731552397-3">Study</span><span class="p" data-group-id="6731552397-3">{</span><span class="p" data-group-id="6731552397-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="6731552397-2">]</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_studies</span><span class="p" data-group-id="8875581500-1">(</span><span class="p" data-group-id="8875581500-1">)</span><span class="w">
+</span><span class="p" data-group-id="8875581500-2">[</span><span class="p" data-group-id="8875581500-3">%</span><span class="nc" data-group-id="8875581500-3">Study</span><span class="p" data-group-id="8875581500-3">{</span><span class="p" data-group-id="8875581500-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="8875581500-2">]</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="list_studies_with_published_promotion/2">
+
+    <span id="list_studies_with_published_promotion/1"></span>
+
+  <div class="detail-header">
+    <a href="#list_studies_with_published_promotion/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_studies_with_published_promotion(tool_entity, opts \\ [])</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L54" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
   </section>
 </section>
 <section class="detail" id="list_studies_with_published_survey/1">
@@ -571,7 +642,7 @@ Functions
     </a>
     <h1 class="signature">list_studies_with_published_survey(opts \\ [])</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L38" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L40" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -595,7 +666,7 @@ Functions
     </a>
     <h1 class="signature">list_subject_studies(user, opts \\ [])</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L76" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L98" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -617,7 +688,29 @@ Functions
     </a>
     <h1 class="signature">list_survey_tools(study)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L248" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L292" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="list_tools/2">
+
+  <div class="detail-header">
+    <a href="#list_tools/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_tools(study, schema)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L297" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -639,7 +732,7 @@ Functions
     </a>
     <h1 class="signature">update_study(changeset)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L189" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L233" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -653,11 +746,11 @@ Functions
   <a href="#update_study/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_study</span><span class="p" data-group-id="7598130507-1">(</span><span class="n">study</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7598130507-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="7598130507-2">}</span><span class="p" data-group-id="7598130507-1">)</span><span class="w">
-</span><span class="p" data-group-id="7598130507-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7598130507-4">%</span><span class="nc" data-group-id="7598130507-4">Study</span><span class="p" data-group-id="7598130507-4">{</span><span class="p" data-group-id="7598130507-4">}</span><span class="p" data-group-id="7598130507-3">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_study</span><span class="p" data-group-id="9202297482-1">(</span><span class="n">study</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9202297482-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="9202297482-2">}</span><span class="p" data-group-id="9202297482-1">)</span><span class="w">
+</span><span class="p" data-group-id="9202297482-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9202297482-4">%</span><span class="nc" data-group-id="9202297482-4">Study</span><span class="p" data-group-id="9202297482-4">{</span><span class="p" data-group-id="9202297482-4">}</span><span class="p" data-group-id="9202297482-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">update_study</span><span class="p" data-group-id="7598130507-5">(</span><span class="n">study</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7598130507-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="7598130507-6">}</span><span class="p" data-group-id="7598130507-5">)</span><span class="w">
-</span><span class="p" data-group-id="7598130507-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7598130507-8">%</span><span class="nc" data-group-id="7598130507-8">Ecto.Changeset</span><span class="p" data-group-id="7598130507-8">{</span><span class="p" data-group-id="7598130507-8">}</span><span class="p" data-group-id="7598130507-7">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_study</span><span class="p" data-group-id="9202297482-5">(</span><span class="n">study</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9202297482-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="9202297482-6">}</span><span class="p" data-group-id="9202297482-5">)</span><span class="w">
+</span><span class="p" data-group-id="9202297482-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9202297482-8">%</span><span class="nc" data-group-id="9202297482-8">Ecto.Changeset</span><span class="p" data-group-id="9202297482-8">{</span><span class="p" data-group-id="9202297482-8">}</span><span class="p" data-group-id="9202297482-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="update_study/2">
@@ -669,7 +762,7 @@ Functions
     </a>
     <h1 class="signature">update_study(study, attrs)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L194" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/studies.ex#L238" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

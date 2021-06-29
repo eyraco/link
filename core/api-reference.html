@@ -10,7 +10,7 @@
     <title>API Reference — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-608ebf4a27.js"></script>
+    <script src="dist/sidebar_items-4049514dcf.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -243,25 +243,63 @@ specific entity.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Core.DataUploader.html">Core.DataUploader</a>
+    <a href="Core.Content.Node.html">Core.Content.Node</a>
 
   </div>
 
-    <div class="summary-synopsis"><p>A data uploader allows a research to ask participants to submit data. This
+    <div class="summary-synopsis"><p>The content node schema.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Content.Nodes.html">Core.Content.Nodes</a>
+
+  </div>
+
+    <div class="summary-synopsis"></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.DataDonation.Participant.html">Core.DataDonation.Participant</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The schema for a donation participant.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.DataDonation.Task.html">Core.DataDonation.Task</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A task (donate data) to be completed by a participant.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.DataDonation.Tool.html">Core.DataDonation.Tool</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The data donation tool schema.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.DataDonation.Tools.html">Core.DataDonation.Tools</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A data donation allows a researcher to ask participants to submit data. This
 data is submitted in the form of a file that is stored on the participants
 device.</p></div>
 
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Core.DataUploader.ClientScript.html">Core.DataUploader.ClientScript</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="Core.DataUploader.UserData.html">Core.DataUploader.UserData</a>
+    <a href="Core.DataDonation.UserData.html">Core.DataDonation.UserData</a>
 
   </div>
 
@@ -396,6 +434,51 @@ For the time being a set of hardcoded marks are provided.</p></div>
     <a href="Core.NotificationCenter.SignalHandlers.html">Core.NotificationCenter.SignalHandlers</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Promotions.html">Core.Promotions</a>
+
+  </div>
+
+    <div class="summary-synopsis"></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Promotions.CallToAction.html">Core.Promotions.CallToAction</a>
+
+  </div>
+
+    <div class="summary-synopsis"></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Promotions.CallToAction.Target.html">Core.Promotions.CallToAction.Target</a>
+
+  </div>
+
+    <div class="summary-synopsis"></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Promotions.FormData.html">Core.Promotions.FormData</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The study type.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Promotions.Promotion.html">Core.Promotions.Promotion</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The promotion schema.</p></div>
 
 </div>
 <div class="summary-row">
@@ -883,19 +966,42 @@ and use that information to produce a localized format.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="CoreWeb.DataLoaderView.html">CoreWeb.DataLoaderView</a>
+    <a href="CoreWeb.DataDonation.Content.html">CoreWeb.DataDonation.Content</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The cms page for data donation tool</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.DataDonation.Form.html">CoreWeb.DataDonation.Form</a>
+
+  </div>
+
+    <div class="summary-synopsis"><h2 id="properties" class="section-heading">
+  <a href="#properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Properties
+</h2>
+<ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
+.</li><li><strong>entity_id</strong> <em>:any, required: true</em></li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.DataDonation.PromotionPlugin.html">CoreWeb.DataDonation.PromotionPlugin</a>
 
   </div>
 
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="CoreWeb.DataUploader.Uploader.html">CoreWeb.DataUploader.Uploader</a>
+    <a href="CoreWeb.DataDonation.Uploader.html">CoreWeb.DataDonation.Uploader</a>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties" class="section-heading">
-  <a href="#properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-1" class="section-heading">
+  <a href="#properties-1" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live view.</li><li><strong>session</strong> <em>:map</em> - The request info necessary for the view, such as params, cookie session info, etc.
@@ -906,7 +1012,21 @@ when the client connects, or reconnects to the stateful view.
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="CoreWeb.DataUploader.Uploader.UploadChangeset.html">CoreWeb.DataUploader.Uploader.UploadChangeset</a>
+    <a href="CoreWeb.DataDonation.Uploader.UploadChangeset.html">CoreWeb.DataDonation.Uploader.UploadChangeset</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.DataDonationController.html">CoreWeb.DataDonationController</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.DataDonationView.html">CoreWeb.DataDonationView</a>
 
   </div>
 
@@ -917,8 +1037,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-1" class="section-heading">
-  <a href="#properties-1" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-2" class="section-heading">
+  <a href="#properties-2" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>devices</strong> <em>:any, required: true</em></li><li><strong>label</strong> <em>:string, required: true</em></li></ul></div>
@@ -994,8 +1114,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-2" class="section-heading">
-  <a href="#properties-2" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-3" class="section-heading">
+  <a href="#properties-3" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
@@ -1027,7 +1147,14 @@ when the client connects, or reconnects to the stateful view.
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="CoreWeb.Live.DataUploader.Routes.html">CoreWeb.Live.DataUploader.Routes</a>
+    <a href="CoreWeb.Live.DataDonation.Routes.html">CoreWeb.Live.DataDonation.Routes</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Live.Promotion.Routes.html">CoreWeb.Live.Promotion.Routes</a>
 
   </div>
 
@@ -1071,6 +1198,13 @@ when the client connects, or reconnects to the stateful view.
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="CoreWeb.LiveForm.html">CoreWeb.LiveForm</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="CoreWeb.LiveLocale.html">CoreWeb.LiveLocale</a>
 
   </div>
@@ -1101,8 +1235,8 @@ framework.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-3" class="section-heading">
-  <a href="#properties-3" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-4" class="section-heading">
+  <a href="#properties-4" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live view.</li><li><strong>session</strong> <em>:map</em> - The request info necessary for the view, such as params, cookie session info, etc.
@@ -1125,6 +1259,38 @@ when the client connects, or reconnects to the stateful view.
   </div>
 
     <div class="summary-synopsis"><p>A Plug that sets a session variable to the current locale.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Promotion.Form.html">CoreWeb.Promotion.Form</a>
+
+  </div>
+
+    <div class="summary-synopsis"><h2 id="properties-5" class="section-heading">
+  <a href="#properties-5" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Properties
+</h2>
+<ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
+.</li><li><strong>entity_id</strong> <em>:any, required: true</em></li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Promotion.Plugin.html">CoreWeb.Promotion.Plugin</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Generic behaviour of a Tool</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.Promotion.Public.html">CoreWeb.Promotion.Public</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The public promotion screen.</p></div>
 
 </div>
 <div class="summary-row">
