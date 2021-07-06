@@ -4,10 +4,10 @@ defmodule EyraUI.Button.ForwardButton do
   """
   use Surface.Component
 
-  prop path, :string, required: true
-  prop label, :string, required: true
-  prop icon, :string, default: "/images/forward.svg"
-  prop text_color, :css_class, default: "text-primary"
+  prop(path, :string, required: true)
+  prop(label, :string, required: true)
+  prop(icon, :string, default: "/images/forward.svg")
+  prop(text_color, :css_class, default: "text-primary")
 
   def render(assigns) do
     ~H"""

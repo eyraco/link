@@ -4,9 +4,9 @@ defmodule EyraUI.Button.SecondaryButton do
   """
   use Surface.Component
 
-  prop path, :string, required: true
-  prop label, :string, required: true
-  prop color, :css_class, default: "primary"
+  prop(path, :string, required: true)
+  prop(label, :string, required: true)
+  prop(color, :css_class, default: "primary")
 
   def render(assigns) do
     ~H"""

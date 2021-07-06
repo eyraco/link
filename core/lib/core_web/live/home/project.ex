@@ -15,17 +15,17 @@ defmodule CoreWeb.Home.Project do
 
   def mount(%{"id" => id}, _session, socket) do
     project = Core.Home.Projects.entity(id)
+
     team_members =
       Teams.entity(id)
       |> Team.get_members()
 
     {:ok,
-      socket
-      |> assign(
-        project: project,
-        team_members: team_members
-      )
-    }
+     socket
+     |> assign(
+       project: project,
+       team_members: team_members
+     )}
   end
 
   def render(assigns) do

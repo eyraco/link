@@ -14,28 +14,28 @@ defmodule CoreWeb.Index do
   alias Core.Home.{Team, Teams}
   alias CoreWeb.Home.{TeamMember, ProjectCard, Collaborator}
 
-  data projects, :any
-  data eyra_members, :any
-  data scientific_board_members, :any
+  data(projects, :any)
+  data(eyra_members, :any)
+  data(scientific_board_members, :any)
 
   def mount(_params, _session, socket) do
     projects = Core.Home.Projects.entities()
+
     eyra_members =
       Teams.entity(:eyra)
       |> Team.get_members()
 
     scientific_board_members =
-        Teams.entity(:scientific_board)
-        |> Team.get_members()
+      Teams.entity(:scientific_board)
+      |> Team.get_members()
 
     {:ok,
-      socket
-      |> assign(
-        projects: projects,
-        eyra_members: eyra_members,
-        scientific_board_members: scientific_board_members
-      )
-    }
+     socket
+     |> assign(
+       projects: projects,
+       eyra_members: eyra_members,
+       scientific_board_members: scientific_board_members
+     )}
   end
 
   def handle_info({:handle_click, %{action: :open, project: project}}, socket) do

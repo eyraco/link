@@ -4,7 +4,7 @@ defmodule CoreWeb.Home.Collaborator do
   """
   use Surface.Component
 
-  prop org, :any, required: true
+  prop(org, :any, required: true)
 
   def render(assigns) do
     ~H"""

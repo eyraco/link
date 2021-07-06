@@ -41,9 +41,9 @@ defmodule Core.Home.Organisations do
   end
 
   def entities(nil), do: nil
+
   def entities(ids) when is_list(ids) do
     entities()
-    |> Enum.filter(&(ids |>  Enum.member?(&1.id)))
+    |> Enum.filter(&(ids |> Enum.member?(&1.id)))
   end
-
 end

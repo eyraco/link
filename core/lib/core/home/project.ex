@@ -6,7 +6,21 @@ defmodule Core.Home.Project do
   alias Core.Home.Organisations
   alias Core.Home.TeamMembers
 
-  defstruct [:id, :name, :promo, :intro, :description, :image_id, :info, :collaborators, :funded_by, :vision, :mission, :aim, :team_members]
+  defstruct [
+    :id,
+    :name,
+    :promo,
+    :intro,
+    :description,
+    :image_id,
+    :info,
+    :collaborators,
+    :funded_by,
+    :vision,
+    :mission,
+    :aim,
+    :team_members
+  ]
 
   def get_collaborators(%Core.Home.Project{collaborators: collaborators}) do
     Organisations.entities(collaborators)

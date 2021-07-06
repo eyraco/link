@@ -4,9 +4,9 @@ defmodule EyraUI.Text.Title1 do
   """
   use Surface.Component
 
-  slot default, required: true
-  prop color, :css_class, default: "text-grey1"
-  prop align, :css_class, default: "text-left"
+  slot(default, required: true)
+  prop(color, :css_class, default: "text-grey1")
+  prop(align, :css_class, default: "text-left")
 
   def render(assigns) do
     ~H"""

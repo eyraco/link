@@ -8,10 +8,10 @@ defmodule CoreWeb.Home.TeamMember do
   alias EyraUI.Button.ForwardButton
   alias EyraUI.{ImagePreview}
 
-  prop conn, :any, required: true
-  prop path_provider, :any, required: true
-  prop member, :any, required: true
-  prop include_button, :boolean, default: true
+  prop(conn, :any, required: true)
+  prop(path_provider, :any, required: true)
+  prop(member, :any, required: true)
+  prop(include_button, :boolean, default: true)
 
   def render(assigns) do
     ~H"""

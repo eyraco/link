@@ -10,5 +10,4 @@ defmodule Core.Home.Team do
   def get_members(%Core.Home.Team{members: members}) do
     TeamMembers.entities(members)
   end
-
 end

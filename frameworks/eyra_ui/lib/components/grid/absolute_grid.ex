@@ -4,8 +4,8 @@ defmodule EyraUI.Grid.AbsoluteGrid do
   """
   use Surface.Component
 
-  prop cols, :string, required: true
-  prop gap, :string
+  prop(cols, :string, required: true)
+  prop(gap, :string)
 
   defp cols("6"), do: "sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
   defp cols("5"), do: "sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"

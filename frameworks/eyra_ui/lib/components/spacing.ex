@@ -4,8 +4,8 @@ defmodule EyraUI.Spacing do
   """
   use Surface.Component
 
-  prop value, :string, required: true
-  prop direction, :string, default: "t"
+  prop(value, :string, required: true)
+  prop(direction, :string, default: "t")
 
   defp spacing("XXL", d), do: "m#{d}-12 lg:m#{d}-24"
   defp spacing("XL", d), do: "m#{d}-12 lg:m#{d}-16"

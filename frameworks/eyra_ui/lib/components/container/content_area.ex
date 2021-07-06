@@ -7,9 +7,9 @@ defmodule EyraUI.Container.ContentArea do
   @doc "The content"
   slot(default, required: true)
 
-  prop bg_color, :css_class, default: "bg-white"
-  prop height, :css_class, default: "h-full"
-  prop image_url, :string
+  prop(bg_color, :css_class, default: "bg-white")
+  prop(height, :css_class, default: "h-full")
+  prop(image_url, :string)
 
   def render(assigns) do
     ~H"""
